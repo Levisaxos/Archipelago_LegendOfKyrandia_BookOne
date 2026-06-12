@@ -28,6 +28,8 @@
 # ── Test / runtime artifacts (generated seeds, server + scrape logs) ─────
 /build/ap_test/
 /build/gen_test/
+/build/run.*
+/build/scrape_*.log
 *.log
 
 # ── Build artifacts that regenerate from source ──────────────────────────
@@ -37,7 +39,7 @@
 *.pyc
 
 # ── Vanilla ScummVM 2.0.0 tree — re-extract from the GOG scummvm-2.0.0.zip.
-#    Track ONLY the four engine files we modified (the fork). ──────────────
+#    Track ONLY the engine files we modified (the fork). ───────────────────
 /scummvm-2.0.0/*
 !/scummvm-2.0.0/engines/
 /scummvm-2.0.0/engines/*
@@ -47,6 +49,12 @@
 !/scummvm-2.0.0/engines/kyra/kyra_lok.h
 !/scummvm-2.0.0/engines/kyra/scene_lok.cpp
 !/scummvm-2.0.0/engines/kyra/saveload_lok.cpp
+# instrumentation + flag/NPC hooks added this session:
+!/scummvm-2.0.0/engines/kyra/items_lok.cpp
+!/scummvm-2.0.0/engines/kyra/text_lok.cpp
+!/scummvm-2.0.0/engines/kyra/script_lok.cpp
+!/scummvm-2.0.0/engines/kyra/kyra_v1.cpp
+!/scummvm-2.0.0/engines/kyra/debugger.cpp
 
 # ── OS / editor cruft ────────────────────────────────────────────────────
 .vs/

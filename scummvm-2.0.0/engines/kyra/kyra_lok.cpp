@@ -417,6 +417,18 @@ void KyraEngine_LoK::startup() {
 
 	snd_playTheme(1, -1);
 	if (_gameToLoad == -1) {
+		// --- AP dev: open known gates at the start of a NEW game so scrape runs
+		//     don't require re-doing each puzzle. Runs after _STARTUP.EMC (initial
+		//     flags) and before the first scene loads, so it persists. Extend this
+		//     list as gate flags are identified (see research/flags.md). This is a
+		//     scrape/dev aid; real randomizer gating will be AP-item driven. ---
+		// Bridge: handled at scene-entry in scene_lok.cpp (enterNewScene) instead of
+		// here — a startup nameIndex swap gets re-defaulted to BROKEN before the
+		// player reaches scene 7, so we force the repaired "BRIDGE" room on every
+		// entry. Keep the saw/quest flags so Herman's dialogue state is consistent.
+		setGameFlag(0x3B);   // 59 = BRIDGE_QUEST_STARTED
+		setGameFlag(0x3F);   // 63 = BRIDGE_SAW_GIVEN
+		// --- end AP dev ---
 		enterNewScene(_currentCharacter->sceneId, _currentCharacter->facing, 0, 0, 1);
 		if (_abortIntroFlag && _skipIntroFlag && saveFileLoadable(0)) {
 			_menuDirectlyToLoad = true;
@@ -840,6 +852,15 @@ void KyraEngine_LoK::processInput(int xpos, int ypos) {
 		} else {
 			int script = checkForNPCScriptRun(xpos, ypos);
 			if (script >= 0) {
+				// --- AP dev: Herman at the repaired bridge (scene 7) is a check/hint
+				//     location. His vanilla NPC script is silent in the "bridge done"
+				//     state, so inject our own interaction here. Placeholder for now —
+				//     the AP location check / hint hookup goes in this branch. ---
+				if (script == 2 && _currentCharacter->sceneId == 7) {
+					characterSays(-1, "The bridge is good as new!  (Herman = bridge-repair check/hint goes here.)", 2, -2);
+					return;
+				}
+				// --- end AP dev ---
 				runNpcScript(script);
 				return;
 			}
@@ -870,6 +891,16 @@ int KyraEngine_LoK::processInputHelper(int xpos, int ypos) {
 			Room *currentRoom = &_roomTable[_currentCharacter->sceneId];
 			int item2 = currentRoom->itemsTable[item];
 			currentRoom->itemsTable[item] = kItemNone;
+
+			// --- AP capture: GROUND pickup. Logs the slot index, so this is the
+			//     authoritative (sceneId, slot) -> item mapping. Catches items that
+			//     APSCRAPE (scene-entry dump only) misses because they spawn after
+			//     entry (e.g. the leaf that lands and becomes a peridot), and ground
+			//     pickups in general (they set _itemInHand directly, bypassing
+			//     setHandItem/APGET). Prefix "APGET". ---
+			warning("APGET scene=%d slot=%d item=%d itemname=%s source=ground",
+			        _currentCharacter->sceneId, item, (int)item2,
+			        _itemList ? _itemList[getItemListIndex(item2)] : "?");
 
 			// --- Archipelago: is this pickup a tracked location? Map it to an AP
 			//     location id. (First proof: the tree-house Garnet. The full

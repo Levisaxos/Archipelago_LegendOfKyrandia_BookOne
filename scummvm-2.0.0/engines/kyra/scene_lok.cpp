@@ -132,6 +132,44 @@ void KyraEngine_LoK::enterNewScene(int sceneId, int facing, int unk1, int unk2, 
 	}
 
 	memset(_entranceMouseCursorTracks, 0xFF, sizeof(_entranceMouseCursorTracks));
+
+	// --- AP capture: scene transition. Logs from/to scene id + name so the walk
+	//     order is reconstructable and exits can be mapped. Prefix "APSCENE". ---
+	{
+		int fromId = _currentCharacter->sceneId;
+		const char *fromNm = (fromId >= 0 && fromId < _roomTableSize &&
+		                      _roomTable[fromId].nameIndex < _roomFilenameTableSize)
+		                         ? _roomFilenameTable[_roomTable[fromId].nameIndex] : "?";
+		const char *toNm = (_roomTable[sceneId].nameIndex < _roomFilenameTableSize)
+		                       ? _roomFilenameTable[_roomTable[sceneId].nameIndex] : "?";
+		warning("APSCENE from=%d name=%s to=%d name=%s", fromId, fromNm, sceneId, toNm);
+	}
+
+	// --- AP dev: force the bridge (scene 7) to always load its repaired "BRIDGE"
+	//     room so scrape runs cross freely. The vanilla BROKEN->BRIDGE swap is a
+	//     persistent nameIndex change, but it gets re-defaulted to BROKEN before we
+	//     reach the scene, so re-apply it on EVERY entry, before the room file is
+	//     read below. Matched by name so there's no magic number. ---
+	if (sceneId == 7) {
+		for (int i = 0; i < _roomFilenameTableSize; ++i) {
+			if (!scumm_stricmp(_roomFilenameTable[i], "BRIDGE")) {
+				_roomTable[7].nameIndex = i;
+				break;
+			}
+		}
+		// Keep Herman (character 2) present in the repaired bridge scene so he stays
+		// a talkable check/hint. His dialogue script keys on the scene id (7), not the
+		// room file, so it still works with the BRIDGE room loaded. His shapes are
+		// loaded globally at startup; he was invisible only because his frame was
+		// stuck at 88 (a blank shape slot) — reset it to his default standing frame 77.
+		_characterList[2].sceneId = 7;
+		_characterList[2].currentAnimFrame = 77;   // Herman default standing frame
+		_characterList[2].facing = 4;
+		warning("APHERMAN scene7 forced: herman x1=%d y1=%d frame=%d",
+		        _characterList[2].x1, _characterList[2].y1, _characterList[2].currentAnimFrame);
+	}
+	// --- end AP dev ---
+
 	_currentCharacter->sceneId = sceneId;
 
 	assert(sceneId < _roomTableSize);
