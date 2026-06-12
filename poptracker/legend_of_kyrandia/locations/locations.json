@@ -1,0 +1,1225 @@
+[
+  {
+    "name": "Brandons Home",
+    "children": [
+      {
+        "name": "Brandon's Home - Kallak's Note",
+        "map_locations": [
+          {
+            "map": "brandons_home",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010000"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brandon's Home - Desk Drawer",
+        "map_locations": [
+          {
+            "map": "brandons_home",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010001"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brandon's Home - Garnet (tree house)",
+        "map_locations": [
+          {
+            "map": "brandons_home",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010002"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Emerald Forest",
+    "children": [
+      {
+        "name": "Willow - Teardrop Catch",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010010"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Lavender Rose",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010011"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Acorn",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010012"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Walnut",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010013"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Pinecone",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 332,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010014"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Apple",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 404,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010015"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Saw",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 44,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010016"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Altar - Marble",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 116,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010017"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Altar - Purple Rose",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 188,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010018"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Amethyst Gem",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 260,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010019"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Aquamarine Gem",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 332,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010020"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Emerald Gem",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 404,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010021"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Sapphire Gem",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 44,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010022"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forest - Ruby Gem",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 116,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010023"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brynn - Give Note & Rose (Silver Rose)",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 188,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010024"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Merith - Summon at Willow",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 260,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010025"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Altar - Birthstone Puzzle (Amulet)",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 332,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010026"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Herman - Repair Bridge (Saw turn-in)",
+        "map_locations": [
+          {
+            "map": "emerald_forest",
+            "x": 404,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010027"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Over The Bridge",
+    "children": [
+      {
+        "name": "Over Bridge - Flute",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010040"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Over Bridge - Gold Coin",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010041"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Over Bridge - Peridot Gem",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010042"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Over Bridge - Diamond Gem",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010043"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Over Bridge - Topaz Gem",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 332,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010044"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bird - Heal & Get Feather",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 404,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010045"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm - Give Feather (Magic Scroll)",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 44,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010046"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grotto - Get Past Malcolm (Flute)",
+        "map_locations": [
+          {
+            "map": "over_the_bridge",
+            "x": 116,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010047"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Caves Entrance",
+    "children": [
+      {
+        "name": "Wishing Well - Drop Coin",
+        "map_locations": [
+          {
+            "map": "caves_entrance",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010060"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caves - Fireberries",
+        "map_locations": [
+          {
+            "map": "caves_entrance",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010061"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caves - Break the Ice",
+        "map_locations": [
+          {
+            "map": "caves_entrance",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010062"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caves - Onyx Gem",
+        "map_locations": [
+          {
+            "map": "caves_entrance",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010063"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caves - Opal Gem",
+        "map_locations": [
+          {
+            "map": "caves_entrance",
+            "x": 332,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010064"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caves - Pearl Gem",
+        "map_locations": [
+          {
+            "map": "caves_entrance",
+            "x": 404,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010065"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inner Caves",
+    "children": [
+      {
+        "name": "Lava - Iron Key",
+        "map_locations": [
+          {
+            "map": "inner_caves",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010080"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caves - Crystal Ball",
+        "map_locations": [
+          {
+            "map": "inner_caves",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010081"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inner Caves - Loose Rock",
+        "map_locations": [
+          {
+            "map": "inner_caves",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010082"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inner Caves - Lodestone Gem",
+        "map_locations": [
+          {
+            "map": "inner_caves",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010083"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Act3 Wilds",
+    "children": [
+      {
+        "name": "Zanthia - Magic Water",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010100"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Empty Flask",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010101"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blueberry Field - Blueberries",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010102"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secret Passage - Rainbowstone",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010103"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crystal Towers - Orchid",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 332,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010104"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Act3 - Tulip",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 404,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010105"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Floating Chalice - Royal Chalice",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 44,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010106"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Act3 - Sunstone Gem",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 116,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010107"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Act3 - Garnet Gem",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 188,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010108"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Blue Potion",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 260,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010109"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Red Potion",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 332,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010110"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Yellow Potion",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 404,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010111"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Purple Potion",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 44,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010112"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Orange Potion",
+        "map_locations": [
+          {
+            "map": "act3_wilds",
+            "x": 116,
+            "y": 152
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010113"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grave Island",
+    "children": [
+      {
+        "name": "Grave Island - Fallen Star",
+        "map_locations": [
+          {
+            "map": "grave_island",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010130"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grave Island - Diamond Gem",
+        "map_locations": [
+          {
+            "map": "grave_island",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010131"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Castle",
+    "children": [
+      {
+        "name": "Castle Library - Book Puzzle (Crown)",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010140"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle Upstairs - Open Safe (Gold Key)",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010141"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle Upstairs - Music Puzzle",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010142"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle Upstairs - Sceptre",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010143"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle Kitchen - Pickup",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 332,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010144"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Mallet",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 404,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010145"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Mirror",
+        "map_locations": [
+          {
+            "map": "castle",
+            "x": 44,
+            "y": 96
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010146"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Catacombs",
+    "children": [
+      {
+        "name": "Catacombs - Hidden Key",
+        "map_locations": [
+          {
+            "map": "catacombs",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010160"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Catacombs - Aquamarine Gem",
+        "map_locations": [
+          {
+            "map": "catacombs",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_loc|1010161"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Powers & Goal",
+    "children": [
+      {
+        "name": "Heal Spell",
+        "map_locations": [
+          {
+            "map": "powers",
+            "x": 44,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_event|Heal Spell"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wisp Spell",
+        "map_locations": [
+          {
+            "map": "powers",
+            "x": 116,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_event|Wisp Spell"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Red Spell",
+        "map_locations": [
+          {
+            "map": "powers",
+            "x": 188,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_event|Red Spell"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blue Spell",
+        "map_locations": [
+          {
+            "map": "powers",
+            "x": 260,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_event|Blue Spell"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Defeat Malcolm (Goal)",
+        "map_locations": [
+          {
+            "map": "powers",
+            "x": 332,
+            "y": 40
+          }
+        ],
+        "sections": [
+          {
+            "access_rules": [
+              "^$kyra_goal"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

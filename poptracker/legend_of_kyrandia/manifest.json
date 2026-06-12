@@ -1,0 +1,16 @@
+{
+  "name": "The Legend of Kyrandia - Book 1 (AP)",
+  "game_name": "The Legend of Kyrandia - Book 1",
+  "package_uid": "legend_of_kyrandia_book1_ap",
+  "package_version": "0.1.0",
+  "author": "Kyrandia AP randomizer project",
+  "variants": {
+    "standard": {
+      "display_name": "Standard",
+      "flags": [
+        "ap"
+      ]
+    }
+  },
+  "min_poptracker_version": "0.18.2"
+}

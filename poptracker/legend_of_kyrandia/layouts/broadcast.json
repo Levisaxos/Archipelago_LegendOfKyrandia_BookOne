@@ -1,0 +1,55 @@
+{
+  "tracker_broadcast": {
+    "type": "group",
+    "header": "Kyrandia Items",
+    "content": {
+      "type": "itemgrid",
+      "item_margin": "2,2",
+      "rows": [
+        [
+          "note",
+          "saw",
+          "teardrop",
+          "lavender_rose",
+          "silver_rose",
+          "marble",
+          "amulet",
+          "acorn"
+        ],
+        [
+          "walnut",
+          "pinecone",
+          "feather",
+          "magic_scroll",
+          "tulip",
+          "flute",
+          "gold_coin",
+          "iron_key"
+        ],
+        [
+          "empty_flask",
+          "blueberries",
+          "orchid",
+          "royal_chalice",
+          "sceptre",
+          "crown",
+          "mallet",
+          "gold_key"
+        ],
+        [
+          "mirror",
+          "fireberries",
+          "ruby",
+          "topaz",
+          "sapphire",
+          "moonstone",
+          "blue_potion",
+          "red_potion"
+        ],
+        [
+          "yellow_potion"
+        ]
+      ]
+    }
+  }
+}

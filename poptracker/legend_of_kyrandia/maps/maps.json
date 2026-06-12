@@ -1,0 +1,72 @@
+[
+  {
+    "name": "brandons_home",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "emerald_forest",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "over_the_bridge",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "caves_entrance",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "inner_caves",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "act3_wilds",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "grave_island",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "castle",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "catacombs",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "rect",
+    "img": "assets/bg.png"
+  },
+  {
+    "name": "powers",
+    "location_size": 22,
+    "location_border_thickness": 2,
+    "location_shape": "diamond",
+    "img": "assets/bg.png"
+  }
+]
