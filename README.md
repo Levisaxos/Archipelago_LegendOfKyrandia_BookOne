@@ -51,6 +51,9 @@ upstreamed to Archipelago it would follow that project's contribution terms.
 ### Disclaimer
 
 Not affiliated with, endorsed by, or associated with Electronic Arts, Westwood
-Studios, the ScummVM project, or GOG. *The Legend of Kyrandia* is a trademark of
-its respective owner. **You must own a legal copy of the game** — this project
-ships no game assets and is a free, non-commercial, asset-free interop project.
+Studios, the ScummVM project, GOG, or Archipelago. *The Legend of Kyrandia* is a
+trademark of its respective owner. **You must own a legal copy of the game** —
+this project ships no game assets and is a free, non-commercial, asset-free
+interop project, provided **as-is without warranty**.
+
+See **[DISCLAIMER.md](DISCLAIMER.md)** for the full notice.
