@@ -1,0 +1,200 @@
+{
+  "tracker_default": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "h_alignment": "left",
+        "content": [
+          {
+            "type": "group",
+            "header": "Progression Items",
+            "content": {
+              "type": "itemgrid",
+              "item_margin": "3,3",
+              "rows": [
+                [
+                  "note",
+                  "saw",
+                  "teardrop",
+                  "lavender_rose",
+                  "silver_rose",
+                  "marble",
+                  "amulet",
+                  "acorn"
+                ],
+                [
+                  "walnut",
+                  "pinecone",
+                  "feather",
+                  "magic_scroll",
+                  "tulip",
+                  "flute",
+                  "gold_coin",
+                  "iron_key"
+                ],
+                [
+                  "empty_flask",
+                  "blueberries",
+                  "orchid",
+                  "royal_chalice",
+                  "sceptre",
+                  "crown",
+                  "mallet",
+                  "gold_key"
+                ],
+                [
+                  "mirror",
+                  "fireberries",
+                  "ruby",
+                  "topaz",
+                  "sapphire",
+                  "moonstone",
+                  "blue_potion",
+                  "red_potion"
+                ],
+                [
+                  "yellow_potion"
+                ]
+              ]
+            }
+          },
+          {
+            "type": "group",
+            "header": "Setting",
+            "content": {
+              "type": "itemgrid",
+              "item_margin": "3,3",
+              "rows": [
+                [
+                  "opt_start_amulet"
+                ]
+              ]
+            }
+          },
+          {
+            "type": "group",
+            "header": "Other Items (no logic effect)",
+            "content": {
+              "type": "itemgrid",
+              "item_margin": "3,3",
+              "rows": [
+                [
+                  "jewel",
+                  "apple",
+                  "purple_rose",
+                  "crystal_ball",
+                  "magic_water",
+                  "rainbowstone",
+                  "hidden_key",
+                  "fallen_star"
+                ],
+                [
+                  "fish",
+                  "mutton_leg",
+                  "purple_potion",
+                  "orange_potion",
+                  "green_potion",
+                  "sunstone",
+                  "peridot",
+                  "emerald"
+                ],
+                [
+                  "amethyst",
+                  "garnet",
+                  "aquamarine",
+                  "diamond",
+                  "pearl",
+                  "opal",
+                  "onyx",
+                  "lodestone"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "header": "Locations (green = in logic)",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "type": "map",
+              "title": "Brandons Home",
+              "maps": [
+                "brandons_home"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Emerald Forest",
+              "maps": [
+                "emerald_forest"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Over The Bridge",
+              "maps": [
+                "over_the_bridge"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Caves Entrance",
+              "maps": [
+                "caves_entrance"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Inner Caves",
+              "maps": [
+                "inner_caves"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Act3 Wilds",
+              "maps": [
+                "act3_wilds"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Grave Island",
+              "maps": [
+                "grave_island"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Castle",
+              "maps": [
+                "castle"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Catacombs",
+              "maps": [
+                "catacombs"
+              ]
+            },
+            {
+              "type": "map",
+              "title": "Powers & Goal",
+              "maps": [
+                "powers"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

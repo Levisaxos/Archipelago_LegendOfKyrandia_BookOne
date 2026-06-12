@@ -1,0 +1,1658 @@
+{
+  "_meta": {
+    "game": "The Legend of Kyrandia - Book 1",
+    "engine": "ScummVM 2.0.0 (KyraEngine_LoK), GOG CD/DOS English",
+    "engine_item_source": "k1ItemNames table extracted from scummvm.exe; ids match debugger give (0-106).",
+    "ap_id_source": "kyrandia_book1_randomizer_plan.md (AP-internal id space, book-1 base 1,000,000).",
+    "ingame_verified_engine_ids": [
+      1,
+      4,
+      10,
+      50
+    ],
+    "confidence_legend": {
+      "verified": "engine id confirmed live via give",
+      "name-exact": "engine name == AP concept",
+      "semantic": "same concept, different wording",
+      "tentative": "best-guess mapping, needs playthrough verification",
+      "state": "a charge/use state of a ladder; AP mapping lives on the ladder head",
+      "unmapped": "engine item has no AP id assigned yet"
+    },
+    "charge_ladders": "Repeated same-name engine ids are decrementing charge/use states of ONE logical item, not interchangeable copies (confirmed for Fireberries: 29=most charges ... 33=least). See each item's 'charge_ladder' field. The HEAD id holds the AP mapping. Translation layer: outgoing = treat ANY member id as the item on pickup; incoming = grant the HEAD (full) id.",
+    "notes": "engine_id is the 'from' side of the AP translation layer; ap_id is the 'to' side."
+  },
+  "items": [
+    {
+      "engine_id": 0,
+      "engine_name": "Garnet",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem. Candidate for plan 1000000 starting jewel or scattered-gem pool."
+    },
+    {
+      "engine_id": 1,
+      "engine_name": "Amethyst",
+      "category": "gem",
+      "ap_id": 1000206,
+      "ap_name": "Amethyst",
+      "confidence": "verified",
+      "charge_ladder": null,
+      "ingame_verified": true,
+      "notes": "Live give-tested."
+    },
+    {
+      "engine_id": 2,
+      "engine_name": "Aquamarine",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem; not yet in AP plan (scattered-gem pool)."
+    },
+    {
+      "engine_id": 3,
+      "engine_name": "Diamond",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem; not yet in AP plan (scattered-gem pool)."
+    },
+    {
+      "engine_id": 4,
+      "engine_name": "Emerald",
+      "category": "gem",
+      "ap_id": 1000203,
+      "ap_name": "Emerald",
+      "confidence": "verified",
+      "charge_ladder": null,
+      "ingame_verified": true,
+      "notes": "Live give-tested."
+    },
+    {
+      "engine_id": 5,
+      "engine_name": "Pearl",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem (Pearl); not in AP plan."
+    },
+    {
+      "engine_id": 6,
+      "engine_name": "Ruby",
+      "category": "gem",
+      "ap_id": 1000201,
+      "ap_name": "Ruby",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Predicted by birthstone-index pattern; verify with give 6."
+    },
+    {
+      "engine_id": 7,
+      "engine_name": "Peridot",
+      "category": "gem",
+      "ap_id": 1000202,
+      "ap_name": "Peridot",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000202."
+    },
+    {
+      "engine_id": 8,
+      "engine_name": "Sapphire",
+      "category": "gem",
+      "ap_id": 1000205,
+      "ap_name": "Sapphire",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000205."
+    },
+    {
+      "engine_id": 9,
+      "engine_name": "Opal",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem (Opal); not in AP plan."
+    },
+    {
+      "engine_id": 10,
+      "engine_name": "Topaz",
+      "category": "gem",
+      "ap_id": 1000204,
+      "ap_name": "Topaz",
+      "confidence": "verified",
+      "charge_ladder": null,
+      "ingame_verified": true,
+      "notes": "Live give-tested."
+    },
+    {
+      "engine_id": 11,
+      "engine_name": "Onyx",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem (Onyx); not in AP plan."
+    },
+    {
+      "engine_id": 12,
+      "engine_name": "Sunstone",
+      "category": "gem",
+      "ap_id": 1000200,
+      "ap_name": "Sunstone",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000200 (altar slot 1)."
+    },
+    {
+      "engine_id": 13,
+      "engine_name": "Moonstone",
+      "category": "gem",
+      "ap_id": 1000207,
+      "ap_name": "Moonstone",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000207 (wishing well)."
+    },
+    {
+      "engine_id": 14,
+      "engine_name": "Rainbowstone",
+      "category": "gem",
+      "ap_id": 1000025,
+      "ap_name": "Rainbowstone",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000025."
+    },
+    {
+      "engine_id": 15,
+      "engine_name": "Lodestone",
+      "category": "gem",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gem (Lodestone); not in AP plan."
+    },
+    {
+      "engine_id": 16,
+      "engine_name": "Rose",
+      "category": "flower",
+      "ap_id": 1000005,
+      "ap_name": "Lavender rose",
+      "confidence": "semantic",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Rose'; plan lavender->silver rose chain. Engine may recolor one Rose object."
+    },
+    {
+      "engine_id": 17,
+      "engine_name": "Tulip",
+      "category": "flower",
+      "ap_id": 1000015,
+      "ap_name": "Tulip",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000015 (yellow potion)."
+    },
+    {
+      "engine_id": 18,
+      "engine_name": "Orchid",
+      "category": "flower",
+      "ap_id": 1000026,
+      "ap_name": "Orchid",
+      "confidence": "semantic",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Orchid' = plan red exotic flower (red potion)."
+    },
+    {
+      "engine_id": 19,
+      "engine_name": "Silver Rose",
+      "category": "flower",
+      "ap_id": 1000006,
+      "ap_name": "Silver rose",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000006."
+    },
+    {
+      "engine_id": 20,
+      "engine_name": "Silver Statuette",
+      "category": "valuable",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Silver Statuette; not in AP plan."
+    },
+    {
+      "engine_id": 21,
+      "engine_name": "Silver Coin",
+      "category": "valuable",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Silver Coin; not in AP plan (plan has Gold coin only)."
+    },
+    {
+      "engine_id": 22,
+      "engine_name": "Gold Coin",
+      "category": "valuable",
+      "ap_id": 1000019,
+      "ap_name": "Gold coin",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000019 (wishing well -> moonstone)."
+    },
+    {
+      "engine_id": 23,
+      "engine_name": "Gold Ring",
+      "category": "valuable",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Gold Ring; not in AP plan."
+    },
+    {
+      "engine_id": 24,
+      "engine_name": "Royal Chalice",
+      "category": "valuable",
+      "ap_id": 1000027,
+      "ap_name": "Royal chalice",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000027 (castle ending)."
+    },
+    {
+      "engine_id": 25,
+      "engine_name": "Pinecone",
+      "category": "tree-drop",
+      "ap_id": 1000012,
+      "ap_name": "Pinecone",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000012 (dropped in hole)."
+    },
+    {
+      "engine_id": 26,
+      "engine_name": "Acorn",
+      "category": "tree-drop",
+      "ap_id": 1000010,
+      "ap_name": "Acorn",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000010 (dropped in hole)."
+    },
+    {
+      "engine_id": 27,
+      "engine_name": "Walnut",
+      "category": "tree-drop",
+      "ap_id": 1000011,
+      "ap_name": "Walnut",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000011 (dropped in hole)."
+    },
+    {
+      "engine_id": 28,
+      "engine_name": "Everglowing Fireberries",
+      "category": "fireberries",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Everglowing Fireberries (distinct from plain Fireberries)."
+    },
+    {
+      "engine_id": 29,
+      "engine_name": "Fireberries",
+      "category": "fireberries",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 29,
+        "members": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "kind": "charges-confirmed"
+      },
+      "ingame_verified": false,
+      "notes": "Fireberries (primary of 29-33). Fire-protection consumable. Fireberries charge ladder (29 = most berries/charges ... 33 = least); each use plucks a berry and decrements. Engine 28 'Everglowing Fireberries' is the separate infinite source. Exact per-id charge counts to confirm."
+    },
+    {
+      "engine_id": 30,
+      "engine_name": "Fireberries",
+      "category": "fireberries",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 29,
+        "index": 1,
+        "members": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "kind": "charges-confirmed"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 29 ('Fireberries'). Fireberries charge ladder (29 = most berries/charges ... 33 = least); each use plucks a berry and decrements. Engine 28 'Everglowing Fireberries' is the separate infinite source. Exact per-id charge counts to confirm."
+    },
+    {
+      "engine_id": 31,
+      "engine_name": "Fireberries",
+      "category": "fireberries",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 29,
+        "index": 2,
+        "members": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "kind": "charges-confirmed"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 2 of engine id 29 ('Fireberries'). Fireberries charge ladder (29 = most berries/charges ... 33 = least); each use plucks a berry and decrements. Engine 28 'Everglowing Fireberries' is the separate infinite source. Exact per-id charge counts to confirm."
+    },
+    {
+      "engine_id": 32,
+      "engine_name": "Fireberries",
+      "category": "fireberries",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 29,
+        "index": 3,
+        "members": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "kind": "charges-confirmed"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 3 of engine id 29 ('Fireberries'). Fireberries charge ladder (29 = most berries/charges ... 33 = least); each use plucks a berry and decrements. Engine 28 'Everglowing Fireberries' is the separate infinite source. Exact per-id charge counts to confirm."
+    },
+    {
+      "engine_id": 33,
+      "engine_name": "Fireberries",
+      "category": "fireberries",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 29,
+        "index": 4,
+        "members": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "kind": "charges-confirmed"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 4 of engine id 29 ('Fireberries'). Fireberries charge ladder (29 = most berries/charges ... 33 = least); each use plucks a berry and decrements. Engine 28 'Everglowing Fireberries' is the separate infinite source. Exact per-id charge counts to confirm."
+    },
+    {
+      "engine_id": 34,
+      "engine_name": "Fish",
+      "category": "food/nature",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Fish; not in AP plan."
+    },
+    {
+      "engine_id": 35,
+      "engine_name": "Fish Bone",
+      "category": "food/nature",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Fish Bone; not in AP plan."
+    },
+    {
+      "engine_id": 36,
+      "engine_name": "Mutton Leg",
+      "category": "food/nature",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Mutton Leg; not in AP plan."
+    },
+    {
+      "engine_id": 37,
+      "engine_name": "Bone",
+      "category": "food/nature",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Bone; not in AP plan."
+    },
+    {
+      "engine_id": 38,
+      "engine_name": "Apple",
+      "category": "food/nature",
+      "ap_id": 1000003,
+      "ap_name": "Apple",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000003. SOFTLOCK risk: eating -> Apple Core (39)."
+    },
+    {
+      "engine_id": 39,
+      "engine_name": "Apple Core",
+      "category": "food/nature",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Apple Core (consumed apple state)."
+    },
+    {
+      "engine_id": 40,
+      "engine_name": "Blueberries",
+      "category": "food/nature",
+      "ap_id": 1000024,
+      "ap_name": "Blueberries",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000024 (blue potion)."
+    },
+    {
+      "engine_id": 41,
+      "engine_name": "Mushroom",
+      "category": "food/nature",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Mushroom; not in AP plan."
+    },
+    {
+      "engine_id": 42,
+      "engine_name": "Note",
+      "category": "quest-misc",
+      "ap_id": 1000001,
+      "ap_name": "Note",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000001 (Kallak note -> Brynn)."
+    },
+    {
+      "engine_id": 43,
+      "engine_name": "Marble",
+      "category": "quest-misc",
+      "ap_id": 1000008,
+      "ap_name": "Marble",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000008 (altar)."
+    },
+    {
+      "engine_id": 44,
+      "engine_name": "Saw",
+      "category": "quest-misc",
+      "ap_id": 1000002,
+      "ap_name": "Saw",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000002 (-> Herman, bridge)."
+    },
+    {
+      "engine_id": 45,
+      "engine_name": "Ankh",
+      "category": "quest-misc",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Ankh; not in AP plan."
+    },
+    {
+      "engine_id": 46,
+      "engine_name": "Feather",
+      "category": "quest-misc",
+      "ap_id": 1000013,
+      "ap_name": "Feather",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000013 (healed bird -> Darm)."
+    },
+    {
+      "engine_id": 47,
+      "engine_name": "Egg",
+      "category": "quest-misc",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Egg; not in AP plan."
+    },
+    {
+      "engine_id": 48,
+      "engine_name": "Leaf",
+      "category": "quest-misc",
+      "ap_id": 1000202,
+      "ap_name": "Peridot (leaf source?)",
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Leaf'; plan notes peridot from dark-forest leaf. May be source object, not the gem. Verify."
+    },
+    {
+      "engine_id": 49,
+      "engine_name": "Shamrock",
+      "category": "quest-misc",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Shamrock; not in AP plan."
+    },
+    {
+      "engine_id": 50,
+      "engine_name": "Fallen Star",
+      "category": "special",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": true,
+      "notes": "Fallen Star (live give-tested = 50). Not in AP plan; candidate filler/check."
+    },
+    {
+      "engine_id": 51,
+      "engine_name": "Crystal Ball",
+      "category": "special",
+      "ap_id": 1000021,
+      "ap_name": "Crystal ball",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000021 (fire puzzle)."
+    },
+    {
+      "engine_id": 52,
+      "engine_name": "Teardrop",
+      "category": "special",
+      "ap_id": 1000004,
+      "ap_name": "Teardrop",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000004 (summons Merith at willow). Test target; verify with give 52."
+    },
+    {
+      "engine_id": 53,
+      "engine_name": "Mirror",
+      "category": "special",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Mirror; relates to mirror/Kyragem ending. Likely event, not pickup."
+    },
+    {
+      "engine_id": 54,
+      "engine_name": "Ice Shard",
+      "category": "special",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Ice Shard; not in AP plan."
+    },
+    {
+      "engine_id": 55,
+      "engine_name": "Flute",
+      "category": "special",
+      "ap_id": 1000016,
+      "ap_name": "Flute",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000016 (stops Malcolm at grotto)."
+    },
+    {
+      "engine_id": 56,
+      "engine_name": "Hourglass",
+      "category": "special",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Hourglass; not in AP plan."
+    },
+    {
+      "engine_id": 57,
+      "engine_name": "Iron Key",
+      "category": "key",
+      "ap_id": 1000020,
+      "ap_name": "Iron key",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000020 (castle)."
+    },
+    {
+      "engine_id": 58,
+      "engine_name": "Jade Key",
+      "category": "key",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Jade Key. Plan has Iron/Gold/Hidden; Jade unassigned. Verify which is catacombs hidden key."
+    },
+    {
+      "engine_id": 59,
+      "engine_name": "Obsidion Key",
+      "category": "key",
+      "ap_id": 1000032,
+      "ap_name": "Hidden key (catacombs)",
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Obsidion Key'; tentatively catacombs hidden key. Verify vs Jade Key (58)."
+    },
+    {
+      "engine_id": 60,
+      "engine_name": "Red Potion",
+      "category": "potion",
+      "ap_id": 1000401,
+      "ap_name": "Red potion",
+      "confidence": "semantic",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 60,
+        "members": [
+          60,
+          61
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Plan 1000401 'Red (x2)' matches engine duplicate 60/61. Red Potion: 2 entries; could be 2 instances (plan 'Red x2') or full/used states. Verify."
+    },
+    {
+      "engine_id": 61,
+      "engine_name": "Red Potion",
+      "category": "potion",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 60,
+        "index": 1,
+        "members": [
+          60,
+          61
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 60 ('Red Potion'). Red Potion: 2 entries; could be 2 instances (plan 'Red x2') or full/used states. Verify."
+    },
+    {
+      "engine_id": 62,
+      "engine_name": "Blue Potion",
+      "category": "potion",
+      "ap_id": 1000400,
+      "ap_name": "Blue potion",
+      "confidence": "semantic",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 62,
+        "members": [
+          62,
+          63
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Plan 1000400. Blue Potion: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 63,
+      "engine_name": "Blue Potion",
+      "category": "potion",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 62,
+        "index": 1,
+        "members": [
+          62,
+          63
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 62 ('Blue Potion'). Blue Potion: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 64,
+      "engine_name": "Yellow Potion",
+      "category": "potion",
+      "ap_id": 1000402,
+      "ap_name": "Yellow potion",
+      "confidence": "semantic",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 64,
+        "members": [
+          64,
+          65
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Plan 1000402. Yellow Potion: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 65,
+      "engine_name": "Yellow Potion",
+      "category": "potion",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 64,
+        "index": 1,
+        "members": [
+          64,
+          65
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 64 ('Yellow Potion'). Yellow Potion: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 66,
+      "engine_name": "Green Potion",
+      "category": "potion",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Green Potion; not in AP plan."
+    },
+    {
+      "engine_id": 67,
+      "engine_name": "Orange Potion",
+      "category": "potion",
+      "ap_id": 1000404,
+      "ap_name": "Orange potion",
+      "confidence": "semantic",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000404."
+    },
+    {
+      "engine_id": 68,
+      "engine_name": "Purple Potion",
+      "category": "potion",
+      "ap_id": 1000403,
+      "ap_name": "Purple potion",
+      "confidence": "semantic",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000403."
+    },
+    {
+      "engine_id": 69,
+      "engine_name": "Potion of Rainbows",
+      "category": "potion",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Potion of Rainbows; not in AP plan."
+    },
+    {
+      "engine_id": 70,
+      "engine_name": "Fresh Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 70,
+        "members": [
+          70,
+          71
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Fresh Water (primary 70/71). Fresh Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 71,
+      "engine_name": "Fresh Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 70,
+        "index": 1,
+        "members": [
+          70,
+          71
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 70 ('Fresh Water'). Fresh Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 72,
+      "engine_name": "Salt Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 72,
+        "members": [
+          72,
+          73
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Salt Water (primary 72/73). Salt Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 73,
+      "engine_name": "Salt Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 72,
+        "index": 1,
+        "members": [
+          72,
+          73
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 72 ('Salt Water'). Salt Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 74,
+      "engine_name": "Mineral Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 74,
+        "members": [
+          74,
+          75
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Mineral Water (primary 74/75). Mineral Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 75,
+      "engine_name": "Mineral Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 74,
+        "index": 1,
+        "members": [
+          74,
+          75
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 74 ('Mineral Water'). Mineral Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 76,
+      "engine_name": "Magical Water",
+      "category": "water",
+      "ap_id": 1000023,
+      "ap_name": "Magic water",
+      "confidence": "semantic",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 76,
+        "members": [
+          76,
+          77
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Engine 'Magical Water' (primary 76/77); plan 1000023 (for Zanthia). Magical Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 77,
+      "engine_name": "Magical Water",
+      "category": "water",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 76,
+        "index": 1,
+        "members": [
+          76,
+          77
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 76 ('Magical Water'). Magical Water: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 78,
+      "engine_name": "Empty Flask",
+      "category": "container",
+      "ap_id": 1000022,
+      "ap_name": "Empty flask",
+      "confidence": "name-exact",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 78,
+        "members": [
+          78,
+          79
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Plan 1000022 (primary 78/79, container). Empty Flask: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 79,
+      "engine_name": "Empty Flask",
+      "category": "container",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 78,
+        "index": 1,
+        "members": [
+          78,
+          79
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 78 ('Empty Flask'). Empty Flask: 2 entries; instances-vs-states unverified."
+    },
+    {
+      "engine_id": 80,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": 1000014,
+      "ap_name": "Magic scroll",
+      "confidence": "semantic",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 80,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Engine 'Scroll' (primary 80-89, 10 instances); plan 1000014 fire-protection. Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 81,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 1,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 82,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 2,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 2 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 83,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 3,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 3 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 84,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 4,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 4 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 85,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 5,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 5 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 86,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 6,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 6 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 87,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 7,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 7 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 88,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 8,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 8 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 89,
+      "engine_name": "Scroll",
+      "category": "scroll",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 80,
+        "index": 9,
+        "members": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "kind": "charges-likely"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 9 of engine id 80 ('Scroll'). Scroll uses-remaining ladder (10 states); plan notes the scroll is used many times. Confirm decrement direction and exact use counts."
+    },
+    {
+      "engine_id": 90,
+      "engine_name": "Parchment scrap",
+      "category": "parchment",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": {
+        "role": "primary",
+        "primary": 90,
+        "members": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Parchment scrap (primary 90-94). Possibly plan library 'books' 1000033. Parchment scrap (5 states); likely a state ladder. Verify."
+    },
+    {
+      "engine_id": 91,
+      "engine_name": "Parchment scrap",
+      "category": "parchment",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 90,
+        "index": 1,
+        "members": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 1 of engine id 90 ('Parchment scrap'). Parchment scrap (5 states); likely a state ladder. Verify."
+    },
+    {
+      "engine_id": 92,
+      "engine_name": "Parchment scrap",
+      "category": "parchment",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 90,
+        "index": 2,
+        "members": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 2 of engine id 90 ('Parchment scrap'). Parchment scrap (5 states); likely a state ladder. Verify."
+    },
+    {
+      "engine_id": 93,
+      "engine_name": "Parchment scrap",
+      "category": "parchment",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 90,
+        "index": 3,
+        "members": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 3 of engine id 90 ('Parchment scrap'). Parchment scrap (5 states); likely a state ladder. Verify."
+    },
+    {
+      "engine_id": 94,
+      "engine_name": "Parchment scrap",
+      "category": "parchment",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "state",
+      "charge_ladder": {
+        "role": "state",
+        "primary": 90,
+        "index": 4,
+        "members": [
+          90,
+          91,
+          92,
+          93,
+          94
+        ],
+        "kind": "unverified"
+      },
+      "ingame_verified": false,
+      "notes": "Charge/use state 4 of engine id 90 ('Parchment scrap'). Parchment scrap (5 states); likely a state ladder. Verify."
+    },
+    {
+      "engine_id": 95,
+      "engine_name": "Red Magestone",
+      "category": "magestone",
+      "ap_id": 1000603,
+      "ap_name": "Red stone (amulet)",
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Red Magestone'; likely amulet spell-stone (plan 1000603). Verify."
+    },
+    {
+      "engine_id": 96,
+      "engine_name": "Orange Magestone",
+      "category": "magestone",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Orange Magestone; amulet spell-stone family. Verify color->power."
+    },
+    {
+      "engine_id": 97,
+      "engine_name": "Yellow Magestone",
+      "category": "magestone",
+      "ap_id": 1000604,
+      "ap_name": "Yellow stone (amulet)",
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Yellow Magestone'; likely amulet spell-stone (plan 1000604). Verify."
+    },
+    {
+      "engine_id": 98,
+      "engine_name": "Green Magestone",
+      "category": "magestone",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Green Magestone; amulet spell-stone family. Possibly Heal (plan 1000600). Verify."
+    },
+    {
+      "engine_id": 99,
+      "engine_name": "Blue-Green Magestone",
+      "category": "magestone",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Blue-Green Magestone; amulet spell-stone family. Verify."
+    },
+    {
+      "engine_id": 100,
+      "engine_name": "Blue Magestone",
+      "category": "magestone",
+      "ap_id": 1000602,
+      "ap_name": "Blue stone (amulet)",
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Blue Magestone'; likely amulet spell-stone (plan 1000602). Verify."
+    },
+    {
+      "engine_id": 101,
+      "engine_name": "Purple Magestone",
+      "category": "magestone",
+      "ap_id": 1000601,
+      "ap_name": "Wisp/teleport (amulet)",
+      "confidence": "tentative",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Purple Magestone'; likely amulet wisp/teleport stone (plan 1000601). Verify."
+    },
+    {
+      "engine_id": 102,
+      "engine_name": "Heavy rock",
+      "category": "filler",
+      "ap_id": 1000018,
+      "ap_name": "Rock",
+      "confidence": "semantic",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Heavy rock'; plan 1000018 'Rock x5' (labyrinth filler)."
+    },
+    {
+      "engine_id": 103,
+      "engine_name": "Royal Crown",
+      "category": "regalia/key",
+      "ap_id": 1000029,
+      "ap_name": "Crown",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Royal Crown'; plan 1000029."
+    },
+    {
+      "engine_id": 104,
+      "engine_name": "Royal Sceptre",
+      "category": "regalia/key",
+      "ap_id": 1000028,
+      "ap_name": "Sceptre",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine 'Royal Sceptre'; plan 1000028."
+    },
+    {
+      "engine_id": 105,
+      "engine_name": "Gold key",
+      "category": "regalia/key",
+      "ap_id": 1000031,
+      "ap_name": "Gold key",
+      "confidence": "name-exact",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Plan 1000031 (from safe)."
+    },
+    {
+      "engine_id": 106,
+      "engine_name": "Unknown item",
+      "category": "sentinel",
+      "ap_id": null,
+      "ap_name": null,
+      "confidence": "unmapped",
+      "charge_ladder": null,
+      "ingame_verified": false,
+      "notes": "Engine sentinel 'Unknown item' (kItemNone display). Not a real pickup."
+    }
+  ],
+  "ap_items_without_engine_id": [
+    {
+      "ap_id": 1000000,
+      "ap_name": "Jewel (starting, Kallak's desk)",
+      "reason": "Generic loose gem; maps to one of engine gem ids 0-15 (which TBD by playthrough)."
+    },
+    {
+      "ap_id": 1000007,
+      "ap_name": "Purple rose",
+      "reason": "No distinct engine entry; likely recolor/state of Rose(16) or conflated with Orchid(18). Verify."
+    },
+    {
+      "ap_id": 1000009,
+      "ap_name": "Amulet",
+      "reason": "Special UI artifact / spell carrier, not in the k1ItemNames pickup table."
+    },
+    {
+      "ap_id": 1000017,
+      "ap_name": "Knife (thrown back)",
+      "reason": "Combat-beat event item; no entry in item-name table."
+    },
+    {
+      "ap_id": 1000030,
+      "ap_name": "Mallet",
+      "reason": "Music-puzzle item; no matching entry. Verify (may be scene object)."
+    },
+    {
+      "ap_id": 1000033,
+      "ap_name": "Books (Opal/Potions/Enchantment/Nature)",
+      "reason": "Library puzzle objects; possibly Parchment scrap(90-94) or pure scene objects."
+    }
+  ]
+}

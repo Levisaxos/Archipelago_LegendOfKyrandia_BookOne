@@ -1,0 +1,112 @@
+# Legend of Kyrandia Book 1 — real engine item IDs
+# Source: k1ItemNames table extracted from GOG scummvm.exe (CD/DOS English, ScummVM 2.0.0).
+# Verified against live `give <id>` results: 1=Amethyst, 4=Emerald, 10=Topaz, 50=Fallen Star.
+# These are the numbers the debugger `give` uses and that the EMC scripts push to grant items.
+
+  0  Garnet
+  1  Amethyst
+  2  Aquamarine
+  3  Diamond
+  4  Emerald
+  5  Pearl
+  6  Ruby
+  7  Peridot
+  8  Sapphire
+  9  Opal
+ 10  Topaz
+ 11  Onyx
+ 12  Sunstone
+ 13  Moonstone
+ 14  Rainbowstone
+ 15  Lodestone
+ 16  Rose
+ 17  Tulip
+ 18  Orchid
+ 19  Silver Rose
+ 20  Silver Statuette
+ 21  Silver Coin
+ 22  Gold Coin
+ 23  Gold Ring
+ 24  Royal Chalice
+ 25  Pinecone
+ 26  Acorn
+ 27  Walnut
+ 28  Everglowing Fireberries
+ 29  Fireberries
+ 30  Fireberries
+ 31  Fireberries
+ 32  Fireberries
+ 33  Fireberries
+ 34  Fish
+ 35  Fish Bone
+ 36  Mutton Leg
+ 37  Bone
+ 38  Apple
+ 39  Apple Core
+ 40  Blueberries
+ 41  Mushroom
+ 42  Note
+ 43  Marble
+ 44  Saw
+ 45  Ankh
+ 46  Feather
+ 47  Egg
+ 48  Leaf
+ 49  Shamrock
+ 50  Fallen Star
+ 51  Crystal Ball
+ 52  Teardrop
+ 53  Mirror
+ 54  Ice Shard
+ 55  Flute
+ 56  Hourglass
+ 57  Iron Key
+ 58  Jade Key
+ 59  Obsidion Key
+ 60  Red Potion
+ 61  Red Potion
+ 62  Blue Potion
+ 63  Blue Potion
+ 64  Yellow Potion
+ 65  Yellow Potion
+ 66  Green Potion
+ 67  Orange Potion
+ 68  Purple Potion
+ 69  Potion of Rainbows
+ 70  Fresh Water
+ 71  Fresh Water
+ 72  Salt Water
+ 73  Salt Water
+ 74  Mineral Water
+ 75  Mineral Water
+ 76  Magical Water
+ 77  Magical Water
+ 78  Empty Flask
+ 79  Empty Flask
+ 80  Scroll
+ 81  Scroll
+ 82  Scroll
+ 83  Scroll
+ 84  Scroll
+ 85  Scroll
+ 86  Scroll
+ 87  Scroll
+ 88  Scroll
+ 89  Scroll
+ 90  Parchment scrap
+ 91  Parchment scrap
+ 92  Parchment scrap
+ 93  Parchment scrap
+ 94  Parchment scrap
+ 95  Red Magestone
+ 96  Orange Magestone
+ 97  Yellow Magestone
+ 98  Green Magestone
+ 99  Blue-Green Magestone
+100  Blue Magestone
+101  Purple Magestone
+102  Heavy rock
+103  Royal Crown
+104  Royal Sceptre
+105  Gold key
+106  Unknown item
