@@ -86,7 +86,7 @@ class TestGenerationBeatable(unittest.TestCase):
 
                 # Sanity: AP's own playthrough also ends in the goal event.
                 self.assertIn(
-                    "Defeat Malcolm (Turn to Stone): Victory", spoiler,
+                    "Defeat Malcolm (Mirror): Victory", spoiler,
                     f"seed {seed}: AP playthrough did not record the Victory event",
                 )
 

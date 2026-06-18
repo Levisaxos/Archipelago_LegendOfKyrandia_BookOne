@@ -43,9 +43,16 @@ class KyrandiaWorld(World):
     item_name_to_id = item_name_to_id
     location_name_to_id = location_name_to_id
 
+    # The seed's four required birthstone gems (slot order). Set in generate_early.
+    birthstone_gems: List[str]
+
     # ------------------------------------------------------------------ items
     def create_item(self, name: str) -> KyrandiaItem:
-        return KyrandiaItem(name, classification_for(name), D.ITEM_NAME_TO_ID[name], self.player)
+        cls = classification_for(name)
+        # The seed's chosen birthstones gate the altar, so they must advance logic.
+        if name in getattr(self, "birthstone_gems", ()):
+            cls = ItemClassification.progression
+        return KyrandiaItem(name, cls, D.ITEM_NAME_TO_ID[name], self.player)
 
     def create_event_item(self, name: str) -> KyrandiaItem:
         return KyrandiaItem(name, ItemClassification.progression, None, self.player)
@@ -59,13 +66,22 @@ class KyrandiaWorld(World):
         # generation, the slot_data dict lands under multiworld.re_gen_passthrough.
         # Restore resolved option values so UT logic matches the server world.
         re_gen = getattr(self.multiworld, "re_gen_passthrough", {})
-        if self.game in re_gen:
-            slot_data = re_gen[self.game]
+        passthrough = re_gen.get(self.game) if isinstance(re_gen, dict) else None
+        if passthrough:
             for key in LOGIC_OPTION_KEYS:
-                if key in slot_data:
+                if key in passthrough:
                     opt = getattr(self.options, key, None)
                     if opt is not None:
-                        opt.value = slot_data[key]
+                        opt.value = passthrough[key]
+
+        # Birthstone altar: pick the seed's 4 required gems. On a UT re-gen,
+        # restore the exact set from slot_data so tracker logic matches; otherwise
+        # roll them from the world's seeded RNG (reproducible for a given seed).
+        restored = passthrough.get("birthstone_gems") if passthrough else None
+        if restored:
+            self.birthstone_gems = list(restored)
+        else:
+            self.birthstone_gems = D.choose_birthstones(self.random)
 
     def create_regions(self) -> None:
         player = self.player
@@ -105,9 +121,9 @@ class KyrandiaWorld(World):
         if precollect_amulet:
             self.multiworld.push_precollected(self.create_item("Amulet"))
 
-        for name, (_ap_id, _cls) in D.ITEM_TABLE.items():
-            if name == D.FILLER_NAME:
-                continue  # filler is added as padding below
+        for name, (_ap_id, cls) in D.ITEM_TABLE.items():
+            if cls == D.FILLER:
+                continue  # all filler is added as padding below (FILLER_POOL)
             if name == "Amulet" and precollect_amulet:
                 continue  # already precollected
             pool.append(self.create_item(name))
@@ -143,6 +159,11 @@ class KyrandiaWorld(World):
             "goal": self.options.goal.value,
             "start_with_amulet": int(self.options.start_with_amulet.value),
             "death_link": bool(self.options.death_link.value),
+            # Birthstone altar: the seed's required gems in slot order (1-4). The
+            # engine fork sets `_birthstoneGemTable` from this (suppressing native
+            # RNG) and NPCs reveal it per birthstone_hints.
+            "birthstone_gems": list(self.birthstone_gems),
+            "birthstone_hints": self.options.birthstone_hints.value,
             # Crosswalk hint for the (future) ScummVM client: AP item id -> engine id.
             # The client translates received AP items into engine item grants.
             "logic_version": 1,

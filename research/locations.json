@@ -8,11 +8,11 @@
     "naming": "Each location name embeds its vanilla item / action (e.g. 'Forest - Saw', 'Brynn - Give Note & Rose (Silver Rose)').",
     "event_items": "Heal/Wisp/Red/Blue Spells and Victory are id-None EVENT items placed locked on event locations (earned capabilities / goal), not networked pool items.",
     "counts": {
-      "regions": 11,
-      "real_locations": 64,
+      "regions": 9,
+      "real_locations": 59,
       "event_locations": 5,
-      "progression_items": 33,
-      "useful_items": 24,
+      "progression_items": 36,
+      "useful_items": 21,
       "filler_item_types": 8
     },
     "open_todos": [
@@ -28,12 +28,10 @@
     "Brandons Home",
     "Emerald Forest",
     "Over The Bridge",
-    "Caves Entrance",
-    "Inner Caves",
+    "Labyrinth",
     "Act3 Wilds",
     "Grave Island",
     "Castle",
-    "Catacombs",
     "Kyragem Chamber"
   ],
   "edges": [
@@ -56,20 +54,13 @@
     },
     {
       "from": "Over The Bridge",
-      "to": "Caves Entrance",
+      "to": "Labyrinth",
       "requires": [
         "Flute"
       ]
     },
     {
-      "from": "Caves Entrance",
-      "to": "Inner Caves",
-      "requires": [
-        "Fireberries"
-      ]
-    },
-    {
-      "from": "Inner Caves",
+      "from": "Labyrinth",
       "to": "Act3 Wilds",
       "requires": [
         "Wisp Spell"
@@ -78,19 +69,17 @@
     {
       "from": "Act3 Wilds",
       "to": "Grave Island",
-      "requires": []
+      "requires": [
+        "Orange potion"
+      ]
     },
     {
       "from": "Grave Island",
       "to": "Castle",
       "requires": [
-        "Iron key"
+        "Iron key",
+        "Red Spell"
       ]
-    },
-    {
-      "from": "Castle",
-      "to": "Catacombs",
-      "requires": []
     },
     {
       "from": "Castle",
@@ -98,7 +87,9 @@
       "requires": [
         "Crown",
         "Sceptre",
-        "Royal chalice"
+        "Royal chalice",
+        "Gold key",
+        "Hidden key"
       ]
     }
   ],
@@ -117,7 +108,13 @@
     },
     {
       "id": 1010002,
-      "name": "Brandon's Home - Garnet (tree house)",
+      "name": "Brandon's Home - Garnet",
+      "region": "Brandons Home",
+      "requires": []
+    },
+    {
+      "id": 1010003,
+      "name": "Brandon's Home - Apple",
       "region": "Brandons Home",
       "requires": []
     },
@@ -135,78 +132,60 @@
     },
     {
       "id": 1010012,
-      "name": "Forest - Acorn",
-      "region": "Emerald Forest",
-      "requires": []
-    },
-    {
-      "id": 1010013,
-      "name": "Forest - Walnut",
-      "region": "Emerald Forest",
-      "requires": []
-    },
-    {
-      "id": 1010014,
-      "name": "Forest - Pinecone",
-      "region": "Emerald Forest",
-      "requires": []
-    },
-    {
-      "id": 1010015,
-      "name": "Forest - Apple",
-      "region": "Emerald Forest",
-      "requires": []
-    },
-    {
-      "id": 1010016,
       "name": "Forest - Saw",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010017,
-      "name": "Temple Altar - Marble",
+      "id": 1010013,
+      "name": "Forest - Tulip",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010018,
-      "name": "Temple Altar - Purple Rose",
-      "region": "Emerald Forest",
-      "requires": []
-    },
-    {
-      "id": 1010019,
+      "id": 1010014,
       "name": "Forest - Amethyst Gem",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010020,
+      "id": 1010015,
       "name": "Forest - Aquamarine Gem",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010021,
+      "id": 1010016,
       "name": "Forest - Emerald Gem",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010022,
+      "id": 1010017,
       "name": "Forest - Sapphire Gem",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010023,
+      "id": 1010018,
       "name": "Forest - Ruby Gem",
       "region": "Emerald Forest",
       "requires": []
     },
     {
-      "id": 1010024,
+      "id": 1010019,
+      "name": "Forest - Opal Gem",
+      "region": "Emerald Forest",
+      "requires": []
+    },
+    {
+      "id": 1010020,
+      "name": "Temple - Purple Rose",
+      "region": "Emerald Forest",
+      "requires": []
+    },
+    {
+      "id": 1010021,
       "name": "Brynn - Give Note & Rose (Silver Rose)",
       "region": "Emerald Forest",
       "requires": [
@@ -215,16 +194,16 @@
       ]
     },
     {
-      "id": 1010025,
-      "name": "Merith - Summon at Willow",
+      "id": 1010022,
+      "name": "Merith - Catch the Marble",
       "region": "Emerald Forest",
       "requires": [
         "Teardrop"
       ]
     },
     {
-      "id": 1010026,
-      "name": "Temple Altar - Birthstone Puzzle (Amulet)",
+      "id": 1010023,
+      "name": "Temple Altar - Rose & Marble (Amulet)",
       "region": "Emerald Forest",
       "requires": [
         "Silver rose",
@@ -232,7 +211,7 @@
       ]
     },
     {
-      "id": 1010027,
+      "id": 1010024,
       "name": "Herman - Repair Bridge (Saw turn-in)",
       "region": "Emerald Forest",
       "requires": [
@@ -241,165 +220,157 @@
     },
     {
       "id": 1010040,
-      "name": "Over Bridge - Flute",
+      "name": "Darm's Wood - Acorn",
       "region": "Over The Bridge",
       "requires": []
     },
     {
       "id": 1010041,
-      "name": "Over Bridge - Gold Coin",
+      "name": "Darm's Wood - Walnut",
       "region": "Over The Bridge",
       "requires": []
     },
     {
       "id": 1010042,
-      "name": "Over Bridge - Peridot Gem",
+      "name": "Darm's Wood - Pinecone",
       "region": "Over The Bridge",
       "requires": []
     },
     {
       "id": 1010043,
-      "name": "Over Bridge - Diamond Gem",
+      "name": "Darm's Wood - Peridot Gem",
       "region": "Over The Bridge",
       "requires": []
     },
     {
       "id": 1010044,
-      "name": "Over Bridge - Topaz Gem",
+      "name": "Darm's Wood - Diamond Gem",
       "region": "Over The Bridge",
       "requires": []
     },
     {
       "id": 1010045,
-      "name": "Bird - Heal & Get Feather",
+      "name": "Darm's Wood - Topaz Gem",
+      "region": "Over The Bridge",
+      "requires": []
+    },
+    {
+      "id": 1010046,
+      "name": "Darm's Wood - Onyx Gem",
+      "region": "Over The Bridge",
+      "requires": []
+    },
+    {
+      "id": 1010047,
+      "name": "Cardinal - Heal & Get Quill",
       "region": "Over The Bridge",
       "requires": [
         "Heal Spell"
       ]
     },
     {
-      "id": 1010046,
-      "name": "Darm - Give Feather (Magic Scroll)",
+      "id": 1010048,
+      "name": "Darm - Give Quill (Scroll of Winter)",
       "region": "Over The Bridge",
       "requires": [
         "Feather"
       ]
     },
     {
-      "id": 1010047,
-      "name": "Grotto - Get Past Malcolm (Flute)",
+      "id": 1010049,
+      "name": "Marble Altar - Birthstone Puzzle (Flute)",
       "region": "Over The Bridge",
-      "requires": [
-        "Flute"
-      ]
+      "requires": []
     },
     {
-      "id": 1010060,
-      "name": "Wishing Well - Drop Coin",
-      "region": "Caves Entrance",
+      "id": 1010050,
+      "name": "Magic Well - Drop Coin (Moonstone)",
+      "region": "Over The Bridge",
       "requires": [
         "Gold coin"
       ]
     },
     {
-      "id": 1010061,
-      "name": "Caves - Fireberries",
-      "region": "Caves Entrance",
+      "id": 1010060,
+      "name": "Labyrinth - Fireberries",
+      "region": "Labyrinth",
       "requires": []
     },
     {
+      "id": 1010061,
+      "name": "Labyrinth - Loose Rock",
+      "region": "Labyrinth",
+      "requires": [
+        "Fireberries"
+      ]
+    },
+    {
       "id": 1010062,
-      "name": "Caves - Break the Ice",
-      "region": "Caves Entrance",
+      "name": "Labyrinth - Gold Coin",
+      "region": "Labyrinth",
       "requires": [
         "Fireberries"
       ]
     },
     {
       "id": 1010063,
-      "name": "Caves - Onyx Gem",
-      "region": "Caves Entrance",
-      "requires": []
+      "name": "Labyrinth - Lodestone Gem",
+      "region": "Labyrinth",
+      "requires": [
+        "Fireberries"
+      ]
     },
     {
       "id": 1010064,
-      "name": "Caves - Opal Gem",
-      "region": "Caves Entrance",
-      "requires": []
-    },
-    {
-      "id": 1010065,
-      "name": "Caves - Pearl Gem",
-      "region": "Caves Entrance",
-      "requires": []
-    },
-    {
-      "id": 1010080,
-      "name": "Lava - Iron Key",
-      "region": "Inner Caves",
+      "name": "Labyrinth - Iron Key (Freeze the Lava)",
+      "region": "Labyrinth",
       "requires": [
+        "Fireberries",
+        "Wisp Spell",
         "Magic scroll"
       ]
-    },
-    {
-      "id": 1010081,
-      "name": "Caves - Crystal Ball",
-      "region": "Inner Caves",
-      "requires": [
-        "Magic scroll"
-      ]
-    },
-    {
-      "id": 1010082,
-      "name": "Inner Caves - Loose Rock",
-      "region": "Inner Caves",
-      "requires": []
-    },
-    {
-      "id": 1010083,
-      "name": "Inner Caves - Lodestone Gem",
-      "region": "Inner Caves",
-      "requires": []
     },
     {
       "id": 1010100,
+      "name": "Zanthia - Crystal Ball (Scroll on Flame)",
+      "region": "Act3 Wilds",
+      "requires": [
+        "Magic scroll"
+      ]
+    },
+    {
+      "id": 1010101,
       "name": "Zanthia - Magic Water",
       "region": "Act3 Wilds",
       "requires": []
     },
     {
-      "id": 1010101,
+      "id": 1010102,
       "name": "Zanthia - Empty Flask",
       "region": "Act3 Wilds",
       "requires": []
     },
     {
-      "id": 1010102,
+      "id": 1010103,
       "name": "Blueberry Field - Blueberries",
       "region": "Act3 Wilds",
       "requires": []
     },
     {
-      "id": 1010103,
-      "name": "Secret Passage - Rainbowstone",
-      "region": "Act3 Wilds",
-      "requires": []
-    },
-    {
       "id": 1010104,
-      "name": "Crystal Towers - Orchid",
+      "name": "Beach - Orchid",
       "region": "Act3 Wilds",
       "requires": []
     },
     {
       "id": 1010105,
-      "name": "Act3 - Tulip",
+      "name": "Beach - Pearl Gem",
       "region": "Act3 Wilds",
       "requires": []
     },
     {
       "id": 1010106,
-      "name": "Floating Chalice - Royal Chalice",
+      "name": "Secret Passage - Rainbowstone",
       "region": "Act3 Wilds",
       "requires": []
     },
@@ -411,38 +382,38 @@
     },
     {
       "id": 1010108,
-      "name": "Act3 - Garnet Gem",
-      "region": "Act3 Wilds",
-      "requires": []
-    },
-    {
-      "id": 1010109,
       "name": "Zanthia - Brew Blue Potion",
       "region": "Act3 Wilds",
       "requires": [
         "Blueberries",
-        "Sapphire",
-        "Empty flask"
+        "Sapphire"
       ]
     },
     {
-      "id": 1010110,
+      "id": 1010109,
       "name": "Zanthia - Brew Red Potion",
       "region": "Act3 Wilds",
       "requires": [
         "Orchid",
-        "Ruby",
-        "Empty flask"
+        "Ruby"
       ]
     },
     {
-      "id": 1010111,
+      "id": 1010110,
       "name": "Zanthia - Brew Yellow Potion",
       "region": "Act3 Wilds",
       "requires": [
         "Tulip",
-        "Topaz",
-        "Empty flask"
+        "Topaz"
+      ]
+    },
+    {
+      "id": 1010111,
+      "name": "Zanthia - Brew Orange Potion",
+      "region": "Act3 Wilds",
+      "requires": [
+        "Red potion",
+        "Yellow potion"
       ]
     },
     {
@@ -456,11 +427,21 @@
     },
     {
       "id": 1010113,
-      "name": "Zanthia - Brew Orange Potion",
+      "name": "Zanthia - Brew Green Potion",
       "region": "Act3 Wilds",
       "requires": [
-        "Yellow potion",
-        "Red potion"
+        "Blue potion",
+        "Yellow potion"
+      ]
+    },
+    {
+      "id": 1010114,
+      "name": "Faun - Give Apple (Royal Chalice)",
+      "region": "Act3 Wilds",
+      "requires": [
+        "Blue Spell",
+        "Purple potion",
+        "Apple"
       ]
     },
     {
@@ -483,63 +464,52 @@
     },
     {
       "id": 1010141,
-      "name": "Castle Upstairs - Open Safe (Gold Key)",
+      "name": "Castle Kitchen - Poker (Sceptre)",
       "region": "Castle",
       "requires": []
     },
     {
       "id": 1010142,
-      "name": "Castle Upstairs - Music Puzzle",
+      "name": "Castle - Fireplace Key (Blue Spell)",
       "region": "Castle",
-      "requires": [
-        "Mallet"
-      ]
-    },
-    {
-      "id": 1010143,
-      "name": "Castle Upstairs - Sceptre",
-      "region": "Castle",
-      "requires": [
-        "Gold key"
-      ]
-    },
-    {
-      "id": 1010144,
-      "name": "Castle Kitchen - Pickup",
-      "region": "Castle",
-      "requires": []
-    },
-    {
-      "id": 1010145,
-      "name": "Castle - Mallet",
-      "region": "Castle",
-      "requires": []
-    },
-    {
-      "id": 1010146,
-      "name": "Castle - Mirror",
-      "region": "Castle",
-      "requires": []
-    },
-    {
-      "id": 1010160,
-      "name": "Catacombs - Hidden Key",
-      "region": "Catacombs",
       "requires": [
         "Blue Spell"
       ]
     },
     {
-      "id": 1010161,
-      "name": "Catacombs - Aquamarine Gem",
-      "region": "Catacombs",
+      "id": 1010143,
+      "name": "Castle - Music Room Mallet (Heal Herman)",
+      "region": "Castle",
+      "requires": [
+        "Heal Spell"
+      ]
+    },
+    {
+      "id": 1010144,
+      "name": "Castle - Bell Puzzle Key",
+      "region": "Castle",
+      "requires": [
+        "Heal Spell",
+        "Mallet"
+      ]
+    },
+    {
+      "id": 1010145,
+      "name": "Castle - Mirror",
+      "region": "Castle",
+      "requires": []
+    },
+    {
+      "id": 1010146,
+      "name": "Castle - Aquamarine Gem",
+      "region": "Castle",
       "requires": []
     }
   ],
   "event_locations": [
     {
-      "name": "Hole - Drop Nuts (Earn Heal Power)",
-      "region": "Emerald Forest",
+      "name": "Deadwood Hole - Drop Nuts (Earn Heal Power)",
+      "region": "Over The Bridge",
       "grants": "Heal Spell",
       "requires": [
         "Amulet",
@@ -549,40 +519,38 @@
       ]
     },
     {
-      "name": "Cave Altar - Place Moonstone (Earn Wisp Power)",
-      "region": "Inner Caves",
+      "name": "Wisp Pedestal - Place Moonstone (Earn Wisp Power)",
+      "region": "Labyrinth",
       "grants": "Wisp Spell",
       "requires": [
         "Amulet",
-        "Moonstone"
+        "Moonstone",
+        "Fireberries"
       ]
     },
     {
-      "name": "Grave - Place Lavender Rose (Earn Red Power)",
+      "name": "Fountain - Drink Water (Earn Blue Power)",
+      "region": "Act3 Wilds",
+      "grants": "Blue Spell",
+      "requires": [
+        "Amulet",
+        "Crystal ball"
+      ]
+    },
+    {
+      "name": "Grave - Place Orchid (Earn Red Power)",
       "region": "Grave Island",
       "grants": "Red Spell",
       "requires": [
         "Amulet",
-        "Lavender rose"
+        "Orchid"
       ]
     },
     {
-      "name": "Catacombs - Forcefield (Earn Blue Power)",
-      "region": "Catacombs",
-      "grants": "Blue Spell",
-      "requires": [
-        "Amulet"
-      ]
-    },
-    {
-      "name": "Kyragem Chamber - Defeat Malcolm (Turn to Stone)",
+      "name": "Kyragem Chamber - Defeat Malcolm (Mirror)",
       "region": "Kyragem Chamber",
       "grants": "Victory",
       "requires": [
-        "Crown",
-        "Sceptre",
-        "Royal chalice",
-        "Mirror",
         "Red Spell"
       ]
     }
@@ -591,25 +559,28 @@
     "progression": [
       "Acorn",
       "Amulet",
+      "Apple",
       "Blue potion",
       "Blueberries",
       "Crown",
-      "Empty flask",
+      "Crystal ball",
       "Feather",
       "Fireberries",
       "Flute",
       "Gold coin",
       "Gold key",
+      "Hidden key",
       "Iron key",
       "Lavender rose",
       "Magic scroll",
       "Mallet",
       "Marble",
-      "Mirror",
       "Moonstone",
       "Note",
+      "Orange potion",
       "Orchid",
       "Pinecone",
+      "Purple potion",
       "Red potion",
       "Royal chalice",
       "Ruby",
@@ -625,26 +596,23 @@
     ],
     "useful": [
       "Amethyst",
-      "Apple",
       "Aquamarine",
-      "Crystal ball",
       "Diamond",
       "Emerald",
+      "Empty flask",
       "Fallen star",
       "Fish",
       "Garnet",
       "Green potion",
-      "Hidden key",
       "Jewel",
       "Lodestone",
       "Magic water",
+      "Mirror",
       "Mutton Leg",
       "Onyx",
       "Opal",
-      "Orange potion",
       "Pearl",
       "Peridot",
-      "Purple potion",
       "Purple rose",
       "Rainbowstone",
       "Sunstone"
