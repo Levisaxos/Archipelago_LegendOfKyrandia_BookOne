@@ -49,15 +49,22 @@
 !/scummvm-2.0.0/engines/kyra/kyra_lok.h
 !/scummvm-2.0.0/engines/kyra/scene_lok.cpp
 !/scummvm-2.0.0/engines/kyra/saveload_lok.cpp
-# instrumentation + flag/NPC hooks added this session:
+# instrumentation + flag/NPC hooks + gate work + dev tooling:
 !/scummvm-2.0.0/engines/kyra/items_lok.cpp
 !/scummvm-2.0.0/engines/kyra/text_lok.cpp
 !/scummvm-2.0.0/engines/kyra/script_lok.cpp
 !/scummvm-2.0.0/engines/kyra/kyra_v1.cpp
 !/scummvm-2.0.0/engines/kyra/debugger.cpp
+!/scummvm-2.0.0/engines/kyra/debugger.h
+!/scummvm-2.0.0/engines/kyra/sequences_lok.cpp
+!/scummvm-2.0.0/engines/kyra/animator_lok.cpp
+!/scummvm-2.0.0/engines/kyra/animator_lok.h
 
 # ── OS / editor cruft ────────────────────────────────────────────────────
 .vs/
 *.user
 Thumbs.db
 .DS_Store
+/dumps
+*.bak
+*.lnk

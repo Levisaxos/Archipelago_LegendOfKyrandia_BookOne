@@ -168,6 +168,24 @@ void KyraEngine_LoK::enterNewScene(int sceneId, int facing, int unk1, int unk2, 
 		warning("APHERMAN scene7 forced: herman x1=%d y1=%d frame=%d",
 		        _characterList[2].x1, _characterList[2].y1, _characterList[2].currentAnimFrame);
 	}
+
+	// AP dev: dragon's mouth (scene 25) — re-open the cave after Malcolm's freeze.
+	// flag 0x47 = "Malcolm encounter done" (keeps him gone); flag 0x52 = ice/cave
+	// block. Once the encounter has happened (0x47 set), clear the ice flag (0x52)
+	// so the cave is passable, leaving 0x47 set so Malcolm does NOT re-trigger. This
+	// makes the encounter play once, then the cave opens on re-entry. Assumes the
+	// "open cave" unlock is held — real AP-item gating comes later.
+	// TODO (polish, future): instead of the ice just being gone on re-entry, play the
+	// proper ice-clearing / dispel-magic animation (seq_dispelMagicAnimation, sets
+	// 0xEE) when the unlock is applied, so the un-freeze looks intentional.
+	if (sceneId == 25 && queryGameFlag(0x47))
+		resetGameFlag(0x52);
+
+	// AP dev: cave rock-gate (scene 115 GATECV) — NOT forced here. flag 0x75 (117) =
+	// "puzzle complete", which the engine renders as gate-open AND rocks-on-plate, so
+	// setting it makes the rock puzzle look already-done (can't throw rocks). The real
+	// "always-open + rocks become a check" needs the passage decoupled from the puzzle
+	// state — deferred to the AP check-wiring phase. Left as the vanilla puzzle for now.
 	// --- end AP dev ---
 
 	_currentCharacter->sceneId = sceneId;
@@ -631,11 +649,16 @@ void KyraEngine_LoK::initSceneData(int facing, int unk1, int brandonAlive) {
 	if (unk1 && brandonAlive == 0)
 		moveCharacterToPos(0, facing, xpos2, ypos2);
 
-	_scriptClick.regs[4] = _itemInHand;
-	_scriptClick.regs[7] = brandonAlive;
-	_emc->start(&_scriptClick, 3);
-	while (_emc->isValid(&_scriptClick))
-		_emc->run(&_scriptClick);
+	// AP dev: the "dumpscenes" command captures static screenshots, so skip running the
+	// scene-entry script (point 3). Running it processes cutscene/dialogue logic, which is
+	// slow and crashes on some rooms when driven outside the normal game loop.
+	if (!_dumpSceneMode) {
+		_scriptClick.regs[4] = _itemInHand;
+		_scriptClick.regs[7] = brandonAlive;
+		_emc->start(&_scriptClick, 3);
+		while (_emc->isValid(&_scriptClick))
+			_emc->run(&_scriptClick);
+	}
 }
 
 void KyraEngine_LoK::initSceneObjectList(int brandonAlive) {

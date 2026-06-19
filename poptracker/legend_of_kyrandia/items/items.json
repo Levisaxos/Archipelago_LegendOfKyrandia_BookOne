@@ -2,155 +2,155 @@
   {
     "name": "Note",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/note.png",
+    "disabled_img": "assets/items/note_off.png",
     "codes": "note"
   },
   {
     "name": "Saw",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/saw.png",
+    "disabled_img": "assets/items/saw_off.png",
     "codes": "saw"
   },
   {
     "name": "Teardrop",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/teardrop.png",
+    "disabled_img": "assets/items/teardrop_off.png",
     "codes": "teardrop"
   },
   {
     "name": "Lavender rose",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/lavender_rose.png",
+    "disabled_img": "assets/items/lavender_rose_off.png",
     "codes": "lavender_rose"
   },
   {
     "name": "Silver rose",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/silver_rose.png",
+    "disabled_img": "assets/items/silver_rose_off.png",
     "codes": "silver_rose"
   },
   {
     "name": "Marble",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/marble.png",
+    "disabled_img": "assets/items/marble_off.png",
     "codes": "marble"
   },
   {
     "name": "Amulet",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/amulet.png",
+    "disabled_img": "assets/items/amulet_off.png",
     "codes": "amulet"
   },
   {
     "name": "Acorn",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/acorn.png",
+    "disabled_img": "assets/items/acorn_off.png",
     "codes": "acorn"
   },
   {
     "name": "Walnut",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/walnut.png",
+    "disabled_img": "assets/items/walnut_off.png",
     "codes": "walnut"
   },
   {
     "name": "Pinecone",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/pinecone.png",
+    "disabled_img": "assets/items/pinecone_off.png",
     "codes": "pinecone"
   },
   {
     "name": "Feather",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/feather.png",
+    "disabled_img": "assets/items/feather_off.png",
     "codes": "feather"
   },
   {
     "name": "Magic scroll",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/magic_scroll.png",
+    "disabled_img": "assets/items/magic_scroll_off.png",
     "codes": "magic_scroll"
   },
   {
     "name": "Tulip",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/tulip.png",
+    "disabled_img": "assets/items/tulip_off.png",
     "codes": "tulip"
   },
   {
     "name": "Flute",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/flute.png",
+    "disabled_img": "assets/items/flute_off.png",
     "codes": "flute"
   },
   {
     "name": "Gold coin",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/gold_coin.png",
+    "disabled_img": "assets/items/gold_coin_off.png",
     "codes": "gold_coin"
   },
   {
     "name": "Iron key",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/iron_key.png",
+    "disabled_img": "assets/items/iron_key_off.png",
     "codes": "iron_key"
   },
   {
     "name": "Empty flask",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/empty_flask.png",
+    "disabled_img": "assets/items/empty_flask_off.png",
     "codes": "empty_flask"
   },
   {
     "name": "Blueberries",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/blueberries.png",
+    "disabled_img": "assets/items/blueberries_off.png",
     "codes": "blueberries"
   },
   {
     "name": "Orchid",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/orchid.png",
+    "disabled_img": "assets/items/orchid_off.png",
     "codes": "orchid"
   },
   {
     "name": "Royal chalice",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/royal_chalice.png",
+    "disabled_img": "assets/items/royal_chalice_off.png",
     "codes": "royal_chalice"
   },
   {
     "name": "Sceptre",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/sceptre.png",
+    "disabled_img": "assets/items/sceptre_off.png",
     "codes": "sceptre"
   },
   {
     "name": "Crown",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/crown.png",
+    "disabled_img": "assets/items/crown_off.png",
     "codes": "crown"
   },
   {
@@ -163,246 +163,274 @@
   {
     "name": "Gold key",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/gold_key.png",
+    "disabled_img": "assets/items/gold_key_off.png",
     "codes": "gold_key"
   },
   {
     "name": "Mirror",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/mirror.png",
+    "disabled_img": "assets/items/mirror_off.png",
     "codes": "mirror"
   },
   {
     "name": "Fireberries",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/fireberries.png",
+    "disabled_img": "assets/items/fireberries_off.png",
     "codes": "fireberries"
   },
   {
     "name": "Ruby",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/ruby.png",
+    "disabled_img": "assets/items/ruby_off.png",
     "codes": "ruby"
   },
   {
     "name": "Topaz",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/topaz.png",
+    "disabled_img": "assets/items/topaz_off.png",
     "codes": "topaz"
   },
   {
     "name": "Sapphire",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/sapphire.png",
+    "disabled_img": "assets/items/sapphire_off.png",
     "codes": "sapphire"
   },
   {
     "name": "Moonstone",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/moonstone.png",
+    "disabled_img": "assets/items/moonstone_off.png",
     "codes": "moonstone"
   },
   {
     "name": "Blue potion",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/blue_potion.png",
+    "disabled_img": "assets/items/blue_potion_off.png",
     "codes": "blue_potion"
   },
   {
     "name": "Red potion",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/red_potion.png",
+    "disabled_img": "assets/items/red_potion_off.png",
     "codes": "red_potion"
   },
   {
     "name": "Yellow potion",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/yellow_potion.png",
+    "disabled_img": "assets/items/yellow_potion_off.png",
     "codes": "yellow_potion"
   },
   {
     "name": "Jewel",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/jewel.png",
+    "disabled_img": "assets/items/jewel_off.png",
     "codes": "jewel"
   },
   {
     "name": "Apple",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/apple.png",
+    "disabled_img": "assets/items/apple_off.png",
     "codes": "apple"
   },
   {
     "name": "Purple rose",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/purple_rose.png",
+    "disabled_img": "assets/items/purple_rose_off.png",
     "codes": "purple_rose"
   },
   {
     "name": "Crystal ball",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/crystal_ball.png",
+    "disabled_img": "assets/items/crystal_ball_off.png",
     "codes": "crystal_ball"
   },
   {
     "name": "Magic water",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/magic_water.png",
+    "disabled_img": "assets/items/magic_water_off.png",
     "codes": "magic_water"
   },
   {
     "name": "Rainbowstone",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/rainbowstone.png",
+    "disabled_img": "assets/items/rainbowstone_off.png",
     "codes": "rainbowstone"
   },
   {
     "name": "Hidden key",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/hidden_key.png",
+    "disabled_img": "assets/items/hidden_key_off.png",
     "codes": "hidden_key"
   },
   {
     "name": "Fallen star",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/fallen_star.png",
+    "disabled_img": "assets/items/fallen_star_off.png",
     "codes": "fallen_star"
   },
   {
     "name": "Fish",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/fish.png",
+    "disabled_img": "assets/items/fish_off.png",
     "codes": "fish"
   },
   {
     "name": "Mutton Leg",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/mutton_leg.png",
+    "disabled_img": "assets/items/mutton_leg_off.png",
     "codes": "mutton_leg"
   },
   {
     "name": "Purple potion",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/purple_potion.png",
+    "disabled_img": "assets/items/purple_potion_off.png",
     "codes": "purple_potion"
   },
   {
     "name": "Orange potion",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/orange_potion.png",
+    "disabled_img": "assets/items/orange_potion_off.png",
     "codes": "orange_potion"
   },
   {
     "name": "Green potion",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/green_potion.png",
+    "disabled_img": "assets/items/green_potion_off.png",
     "codes": "green_potion"
   },
   {
     "name": "Sunstone",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/sunstone.png",
+    "disabled_img": "assets/items/sunstone_off.png",
     "codes": "sunstone"
   },
   {
     "name": "Peridot",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/peridot.png",
+    "disabled_img": "assets/items/peridot_off.png",
     "codes": "peridot"
   },
   {
     "name": "Emerald",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/emerald.png",
+    "disabled_img": "assets/items/emerald_off.png",
     "codes": "emerald"
   },
   {
     "name": "Amethyst",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/amethyst.png",
+    "disabled_img": "assets/items/amethyst_off.png",
     "codes": "amethyst"
   },
   {
     "name": "Garnet",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/garnet.png",
+    "disabled_img": "assets/items/garnet_off.png",
     "codes": "garnet"
   },
   {
     "name": "Aquamarine",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/aquamarine.png",
+    "disabled_img": "assets/items/aquamarine_off.png",
     "codes": "aquamarine"
   },
   {
     "name": "Diamond",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/diamond.png",
+    "disabled_img": "assets/items/diamond_off.png",
     "codes": "diamond"
   },
   {
     "name": "Pearl",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/pearl.png",
+    "disabled_img": "assets/items/pearl_off.png",
     "codes": "pearl"
   },
   {
     "name": "Opal",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/opal.png",
+    "disabled_img": "assets/items/opal_off.png",
     "codes": "opal"
   },
   {
     "name": "Onyx",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/onyx.png",
+    "disabled_img": "assets/items/onyx_off.png",
     "codes": "onyx"
   },
   {
     "name": "Lodestone",
     "type": "toggle",
-    "img": "assets/item_on.png",
-    "disabled_img": "assets/item_off.png",
+    "img": "assets/items/lodestone.png",
+    "disabled_img": "assets/items/lodestone_off.png",
     "codes": "lodestone"
   },
   {
     "name": "Start With Amulet",
     "type": "toggle",
-    "img": "assets/opt_on.png",
-    "disabled_img": "assets/opt_off.png",
+    "img": "assets/items/amulet.png",
+    "disabled_img": "assets/items/amulet_off.png",
     "codes": "opt_start_amulet"
+  },
+  {
+    "name": "Heal Spell",
+    "type": "toggle",
+    "img": "assets/items/amulet_heal.png",
+    "disabled_img": "assets/items/amulet_heal_off.png",
+    "codes": "amulet_heal"
+  },
+  {
+    "name": "Wisp Spell",
+    "type": "toggle",
+    "img": "assets/items/amulet_wisp.png",
+    "disabled_img": "assets/items/amulet_wisp_off.png",
+    "codes": "amulet_wisp"
+  },
+  {
+    "name": "Red Spell",
+    "type": "toggle",
+    "img": "assets/items/amulet_red.png",
+    "disabled_img": "assets/items/amulet_red_off.png",
+    "codes": "amulet_red"
+  },
+  {
+    "name": "Blue Spell",
+    "type": "toggle",
+    "img": "assets/items/amulet_blue.png",
+    "disabled_img": "assets/items/amulet_blue_off.png",
+    "codes": "amulet_blue"
   }
 ]

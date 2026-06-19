@@ -397,6 +397,10 @@ protected:
 	uint8 *_shapes[373];
 	Item _itemInHand;
 	bool _changedScene;
+	// AP dev: when set, initSceneData() skips running the scene-entry script. Used by
+	// the "dumpscenes" debugger command so screenshots capture a static scene without
+	// running cutscene/dialogue logic (which is slow and crashes on some rooms).
+	bool _dumpSceneMode;
 	int _unkScreenVar1, _unkScreenVar2, _unkScreenVar3;
 	int _beadStateVar;
 	int _unkAmuletVar;

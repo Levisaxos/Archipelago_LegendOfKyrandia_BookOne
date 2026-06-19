@@ -57,6 +57,12 @@
                 ],
                 [
                   "yellow_potion"
+                ],
+                [
+                  "amulet_heal",
+                  "amulet_wisp",
+                  "amulet_red",
+                  "amulet_blue"
                 ]
               ]
             }
@@ -123,74 +129,58 @@
           "type": "tabbed",
           "tabs": [
             {
-              "type": "map",
-              "title": "Brandons Home",
-              "maps": [
-                "brandons_home"
-              ]
+              "title": "1 \u00b7 Until the Bridge",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "section1"
+                ]
+              }
             },
             {
-              "type": "map",
-              "title": "Emerald Forest",
-              "maps": [
-                "emerald_forest"
-              ]
+              "title": "2 \u00b7 To the Dragon's Mouth",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "section2"
+                ]
+              }
             },
             {
-              "type": "map",
-              "title": "Over The Bridge",
-              "maps": [
-                "over_the_bridge"
-              ]
+              "title": "3 \u00b7 The Cave",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "section3"
+                ]
+              }
             },
             {
-              "type": "map",
-              "title": "Caves Entrance",
-              "maps": [
-                "caves_entrance"
-              ]
+              "title": "4 \u00b7 Zanthia (before trap door)",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "section4"
+                ]
+              }
             },
             {
-              "type": "map",
-              "title": "Inner Caves",
-              "maps": [
-                "inner_caves"
-              ]
+              "title": "5 \u00b7 After the Trap Door",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "section5"
+                ]
+              }
             },
             {
-              "type": "map",
-              "title": "Act3 Wilds",
-              "maps": [
-                "act3_wilds"
-              ]
-            },
-            {
-              "type": "map",
-              "title": "Grave Island",
-              "maps": [
-                "grave_island"
-              ]
-            },
-            {
-              "type": "map",
-              "title": "Castle",
-              "maps": [
-                "castle"
-              ]
-            },
-            {
-              "type": "map",
-              "title": "Catacombs",
-              "maps": [
-                "catacombs"
-              ]
-            },
-            {
-              "type": "map",
-              "title": "Powers & Goal",
-              "maps": [
-                "powers"
-              ]
+              "title": "6 \u00b7 The Castle",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "section6"
+                ]
+              }
             }
           ]
         }

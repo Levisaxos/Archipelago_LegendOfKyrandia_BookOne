@@ -1,72 +1,44 @@
 [
   {
-    "name": "brandons_home",
-    "location_size": 22,
+    "name": "section1",
+    "img": "assets/maps/section1.png",
+    "location_size": 34,
     "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
+    "location_shape": "rect"
   },
   {
-    "name": "emerald_forest",
-    "location_size": 22,
+    "name": "section2",
+    "img": "assets/maps/section2.png",
+    "location_size": 34,
     "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
+    "location_shape": "rect"
   },
   {
-    "name": "over_the_bridge",
-    "location_size": 22,
+    "name": "section3",
+    "img": "assets/maps/section3.png",
+    "location_size": 34,
     "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
+    "location_shape": "rect"
   },
   {
-    "name": "caves_entrance",
-    "location_size": 22,
+    "name": "section4",
+    "img": "assets/maps/section4.png",
+    "location_size": 34,
     "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
+    "location_shape": "rect"
   },
   {
-    "name": "inner_caves",
-    "location_size": 22,
+    "name": "section5",
+    "img": "assets/maps/section5.png",
+    "location_size": 34,
     "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
+    "location_shape": "rect"
   },
   {
-    "name": "act3_wilds",
-    "location_size": 22,
+    "name": "section6",
+    "img": "assets/maps/section6.png",
+    "location_size": 34,
     "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
-  },
-  {
-    "name": "grave_island",
-    "location_size": 22,
-    "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
-  },
-  {
-    "name": "castle",
-    "location_size": 22,
-    "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
-  },
-  {
-    "name": "catacombs",
-    "location_size": 22,
-    "location_border_thickness": 2,
-    "location_shape": "rect",
-    "img": "assets/bg.png"
-  },
-  {
-    "name": "powers",
-    "location_size": 22,
-    "location_border_thickness": 2,
-    "location_shape": "diamond",
-    "img": "assets/bg.png"
+    "location_shape": "rect"
   }
 ]

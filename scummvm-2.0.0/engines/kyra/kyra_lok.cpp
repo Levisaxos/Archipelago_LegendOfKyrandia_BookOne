@@ -42,6 +42,8 @@ namespace Kyra {
 KyraEngine_LoK::KyraEngine_LoK(OSystem *system, const GameFlags &flags)
 	: KyraEngine_v1(system, flags) {
 
+	_dumpSceneMode = false;
+
 	_seq_Forest = _seq_KallakWriting = _seq_KyrandiaLogo = _seq_KallakMalcolm = 0;
 	_seq_MalcolmTree = _seq_WestwoodLogo = _seq_Demo1 = _seq_Demo2 = _seq_Demo3 = 0;
 	_seq_Demo4 = 0;
@@ -428,6 +430,11 @@ void KyraEngine_LoK::startup() {
 		// entry. Keep the saw/quest flags so Herman's dialogue state is consistent.
 		setGameFlag(0x3B);   // 59 = BRIDGE_QUEST_STARTED
 		setGameFlag(0x3F);   // 63 = BRIDGE_SAW_GIVEN
+		// AP dev: the amulet + 4 powers are granted in mainLoop() after the warp via
+		// the real grant code (makeAmuletAppear + seq_createAmuletJewel x4), so they
+		// render persistently — see below.
+		// AP dev: scene-19 warp happens in mainLoop() AFTER the opening tree intro
+		// (the intro forces scene 0 and overrides any warp done here at startup).
 		// --- end AP dev ---
 		enterNewScene(_currentCharacter->sceneId, _currentCharacter->facing, 0, 0, 1);
 		if (_abortIntroFlag && _skipIntroFlag && saveFileLoadable(0)) {
@@ -456,6 +463,25 @@ void KyraEngine_LoK::mainLoop() {
 	apConnectionScreen();
 
 	while (!shouldQuit()) {
+		// AP dev: one-shot warp to scene 19 (FSOUTH), one screen from the dragon's
+		// mouth (25), for fast gate testing — fired once the opening tree intro is
+		// done (flag 0x7B), since the intro forces scene 0 and overrides a startup warp.
+		static bool s_apWarpedToTestScene = false;
+		if (!s_apWarpedToTestScene && queryGameFlag(0x7B)) {
+			s_apWarpedToTestScene = true;
+			if (_currentCharacter->sceneId != 19)
+				enterNewScene(19, _currentCharacter->facing, 0, 0, 1);
+			// AP dev: grant the amulet the way the game does — makeAmuletAppear draws
+			// the base + sets 0x2D, then seq_createAmuletJewel draws each jewel and
+			// sets its power flag (0x55 + jewel). This is the real grant code, so it
+			// renders persistently and the powers are usable.
+			o1_makeAmuletAppear(0);
+			seq_createAmuletJewel(1, 0, 0, 0);   // sets 0x56
+			seq_createAmuletJewel(2, 0, 0, 0);   // sets 0x57
+			seq_createAmuletJewel(3, 0, 0, 0);   // sets 0x58
+			seq_createAmuletJewel(4, 0, 0, 0);   // sets 0x59
+		}
+
 		int32 frameTime = (int32)_system->getMillis();
 
 		if (_currentCharacter->sceneId == 210) {
@@ -825,6 +851,20 @@ void KyraEngine_LoK::processInput(int xpos, int ypos) {
 	if (processInputHelper(xpos, ypos))
 		return;
 
+	// AP dev: cave rock-gate (scene 115 GATECV) — always let the player leave WEST to
+	// 197, even with the gate "closed", so the one-way can never trap. The west exit
+	// (_walkBlockWest = 197) is defined the whole time, but the closed gate (a) makes
+	// the scene click script swallow the left-edge click and (b) blocks Brandon's WALK
+	// path so normal pathfinding to the exit fails. So bypass both: on a left-edge
+	// click, teleport straight to the west scene (facing 6 = west -> east entrance),
+	// exactly like changeScene does. The rock puzzle (plateau/flags 116,118-122) is left
+	// fully intact — still playable, so it can become the AP "placed the rocks" check.
+	if (_currentCharacter->sceneId == 115 && ypos <= 158 && xpos < 12 && _walkBlockWest != 0xFFFF) {
+		_brandonPosX = _brandonPosY = -1;
+		enterNewScene(_walkBlockWest, 6, 0, 0, 1);
+		return;
+	}
+
 	uint8 item = findItemAtPos(xpos, ypos);
 	if (item == 0xFF) {
 		_changedScene = false;
@@ -1182,6 +1222,13 @@ void KyraEngine_LoK::readSettings() {
 		_configTextspeed = 2;   // Fast
 
 	KyraEngine_v1::readSettings();
+
+	// Archipelago: always start with the fastest walk speed and Voice & Text.
+	// The in-game controls menu still mutates these values directly, so the
+	// player can change them during a session; they reset on each launch.
+	_configWalkspeed = 4;   // index into { 11, 9, 6, 5, 3 } -> fastest
+	_configVoice = 2;       // Voice & Text
+	setWalkspeed(_configWalkspeed);
 }
 
 void KyraEngine_LoK::writeSettings() {

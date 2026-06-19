@@ -1,1222 +1,3389 @@
 [
   {
-    "name": "Brandons Home",
+    "name": "1 \u00b7 Until the Bridge",
     "children": [
       {
-        "name": "Brandon's Home - Kallak's Note",
+        "name": "0 GEMCUT",
         "map_locations": [
           {
-            "map": "brandons_home",
-            "x": 44,
-            "y": 40
+            "map": "section1",
+            "x": 672,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010000"
-            ]
+            "name": "0 GEMCUT"
           }
         ]
       },
       {
-        "name": "Brandon's Home - Desk Drawer",
+        "name": "1 GEM",
         "map_locations": [
           {
-            "map": "brandons_home",
-            "x": 116,
-            "y": 40
+            "map": "section1",
+            "x": 672,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010001"
-            ]
+            "name": "1 GEM"
           }
         ]
       },
       {
-        "name": "Brandon's Home - Garnet (tree house)",
+        "name": "2 HEALER",
         "map_locations": [
           {
-            "map": "brandons_home",
-            "x": 188,
-            "y": 40
+            "map": "section1",
+            "x": 96,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010002"
-            ]
+            "name": "2 HEALER"
+          }
+        ]
+      },
+      {
+        "name": "3 EXTHEAL",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 288,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "3 EXTHEAL"
+          }
+        ]
+      },
+      {
+        "name": "4 SICKWIL",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 480,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "4 SICKWIL"
+          }
+        ]
+      },
+      {
+        "name": "5 TRUNK",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 672,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "5 TRUNK"
+          }
+        ]
+      },
+      {
+        "name": "6 ALTAR",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1440,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "6 ALTAR"
+          }
+        ]
+      },
+      {
+        "name": "7 BROKEN",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1056,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "7 BROKEN"
+          }
+        ]
+      },
+      {
+        "name": "8 SORROW",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1056,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "8 SORROW"
+          }
+        ]
+      },
+      {
+        "name": "9 CAVE",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1248,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "9 CAVE"
+          }
+        ]
+      },
+      {
+        "name": "10 FNORTH",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 864,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "10 FNORTH"
+          }
+        ]
+      },
+      {
+        "name": "11 FORESTB",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1248,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "11 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "12 FORESTA",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1248,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "12 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "13 XEDGE",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1248,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "13 XEDGE"
+          }
+        ]
+      },
+      {
+        "name": "14 ZROCK",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 288,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "14 ZROCK"
+          }
+        ]
+      },
+      {
+        "name": "15 NWCLIFB",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1632,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "15 NWCLIFB"
+          }
+        ]
+      },
+      {
+        "name": "16 FGOWEST",
+        "map_locations": [
+          {
+            "map": "section1",
+            "x": 1056,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "16 FGOWEST"
           }
         ]
       }
     ]
   },
   {
-    "name": "Emerald Forest",
+    "name": "2 \u00b7 To the Dragon's Mouth",
     "children": [
       {
-        "name": "Willow - Teardrop Catch",
+        "name": "17 FNORTH",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 44,
-            "y": 40
+            "map": "section2",
+            "x": 288,
+            "y": 300
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010010"
-            ]
+            "name": "17 FNORTH"
           }
         ]
       },
       {
-        "name": "Forest - Lavender Rose",
+        "name": "18 FORESTA",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 116,
-            "y": 40
+            "map": "section2",
+            "x": 672,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010011"
-            ]
+            "name": "18 FORESTA"
           }
         ]
       },
       {
-        "name": "Forest - Acorn",
+        "name": "19 FSOUTH",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 188,
-            "y": 40
+            "map": "section2",
+            "x": 864,
+            "y": 540
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010012"
-            ]
+            "name": "19 FSOUTH"
           }
         ]
       },
       {
-        "name": "Forest - Walnut",
+        "name": "20 EDGE",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 260,
-            "y": 40
+            "map": "section2",
+            "x": 864,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010013"
-            ]
+            "name": "20 EDGE"
           }
         ]
       },
       {
-        "name": "Forest - Pinecone",
+        "name": "21 CLIFF",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 332,
-            "y": 40
+            "map": "section2",
+            "x": 480,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010014"
-            ]
+            "name": "21 CLIFF"
           }
         ]
       },
       {
-        "name": "Forest - Apple",
+        "name": "22 ZROCK",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 404,
-            "y": 40
+            "map": "section2",
+            "x": 96,
+            "y": 300
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010015"
-            ]
+            "name": "22 ZROCK"
           }
         ]
       },
       {
-        "name": "Forest - Saw",
+        "name": "23 ZROCK",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 44,
-            "y": 96
+            "map": "section2",
+            "x": 288,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010016"
-            ]
+            "name": "23 ZROCK"
           }
         ]
       },
       {
-        "name": "Temple Altar - Marble",
+        "name": "24 CAVEB",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 116,
-            "y": 96
+            "map": "section2",
+            "x": 672,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010017"
-            ]
+            "name": "24 CAVEB"
           }
         ]
       },
       {
-        "name": "Temple Altar - Purple Rose",
+        "name": "25 DRAGON",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 188,
-            "y": 96
+            "map": "section2",
+            "x": 1056,
+            "y": 540
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010018"
-            ]
+            "name": "25 DRAGON"
           }
         ]
       },
       {
-        "name": "Forest - Amethyst Gem",
+        "name": "26 EXTSPEL",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 260,
-            "y": 96
+            "map": "section2",
+            "x": 480,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010019"
-            ]
+            "name": "26 EXTSPEL"
           }
         ]
       },
       {
-        "name": "Forest - Aquamarine Gem",
+        "name": "27 SPELL",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 332,
-            "y": 96
+            "map": "section2",
+            "x": 288,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010020"
-            ]
+            "name": "27 SPELL"
           }
         ]
       },
       {
-        "name": "Forest - Emerald Gem",
+        "name": "28 SPRING",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 404,
-            "y": 96
+            "map": "section2",
+            "x": 864,
+            "y": 300
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010021"
-            ]
+            "name": "28 SPRING"
           }
         ]
       },
       {
-        "name": "Forest - Sapphire Gem",
+        "name": "29 TEMPLE",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 44,
-            "y": 152
+            "map": "section2",
+            "x": 288,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010022"
-            ]
+            "name": "29 TEMPLE"
           }
         ]
       },
       {
-        "name": "Forest - Ruby Gem",
+        "name": "30 SONG",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 116,
-            "y": 152
+            "map": "section2",
+            "x": 672,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010023"
-            ]
+            "name": "30 SONG"
           }
         ]
       },
       {
-        "name": "Brynn - Give Note & Rose (Silver Rose)",
+        "name": "31 OAKS",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 188,
-            "y": 152
+            "map": "section2",
+            "x": 96,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010024"
-            ]
+            "name": "31 OAKS"
           }
         ]
       },
       {
-        "name": "Merith - Summon at Willow",
+        "name": "32 WELL",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 260,
-            "y": 152
+            "map": "section2",
+            "x": 672,
+            "y": 300
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010025"
-            ]
+            "name": "32 WELL"
           }
         ]
       },
       {
-        "name": "Temple Altar - Birthstone Puzzle (Amulet)",
+        "name": "33 SQUARE",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 332,
-            "y": 152
+            "map": "section2",
+            "x": 480,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010026"
-            ]
+            "name": "33 SQUARE"
           }
         ]
       },
       {
-        "name": "Herman - Repair Bridge (Saw turn-in)",
+        "name": "34 WISE",
         "map_locations": [
           {
-            "map": "emerald_forest",
-            "x": 404,
-            "y": 152
+            "map": "section2",
+            "x": 480,
+            "y": 300
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010027"
-            ]
+            "name": "34 WISE"
+          }
+        ]
+      },
+      {
+        "name": "35 RUBY",
+        "map_locations": [
+          {
+            "map": "section2",
+            "x": 96,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "35 RUBY"
+          }
+        ]
+      },
+      {
+        "name": "36 DEAD",
+        "map_locations": [
+          {
+            "map": "section2",
+            "x": 672,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "36 DEAD"
           }
         ]
       }
     ]
   },
   {
-    "name": "Over The Bridge",
+    "name": "3 \u00b7 The Cave",
     "children": [
       {
-        "name": "Over Bridge - Flute",
+        "name": "109 ENTER",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 44,
-            "y": 40
+            "map": "section3",
+            "x": 96,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010040"
-            ]
+            "name": "109 ENTER"
           }
         ]
       },
       {
-        "name": "Over Bridge - Gold Coin",
+        "name": "110 ARCH",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 116,
-            "y": 40
+            "map": "section3",
+            "x": 1824,
+            "y": 780
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010041"
-            ]
+            "name": "110 ARCH"
           }
         ]
       },
       {
-        "name": "Over Bridge - Peridot Gem",
+        "name": "111 MOONCAV",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 188,
-            "y": 40
+            "map": "section3",
+            "x": 1632,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010042"
-            ]
+            "name": "111 MOONCAV"
           }
         ]
       },
       {
-        "name": "Over Bridge - Diamond Gem",
+        "name": "113 EMCAV",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 260,
-            "y": 40
+            "map": "section3",
+            "x": 2592,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010043"
-            ]
+            "name": "113 EMCAV"
           }
         ]
       },
       {
-        "name": "Over Bridge - Topaz Gem",
+        "name": "114 CHASM",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 332,
-            "y": 40
+            "map": "section3",
+            "x": 672,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010044"
-            ]
+            "name": "114 CHASM"
           }
         ]
       },
       {
-        "name": "Bird - Heal & Get Feather",
+        "name": "115 GATECV",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 404,
-            "y": 40
+            "map": "section3",
+            "x": 480,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010045"
-            ]
+            "name": "115 GATECV"
           }
         ]
       },
       {
-        "name": "Darm - Give Feather (Magic Scroll)",
+        "name": "117 LAVA",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 44,
-            "y": 96
+            "map": "section3",
+            "x": 2784,
+            "y": 780
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010046"
-            ]
+            "name": "117 LAVA"
           }
         ]
       },
       {
-        "name": "Grotto - Get Past Malcolm (Flute)",
+        "name": "120 GENCAVB",
         "map_locations": [
           {
-            "map": "over_the_bridge",
-            "x": 116,
-            "y": 96
+            "map": "section3",
+            "x": 672,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010047"
-            ]
+            "name": "120 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "121 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 672,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "121 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "122 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 864,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "122 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "123 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 864,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "123 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "124 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 864,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "124 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "125 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 864,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "125 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "126 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "126 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "127 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "127 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "128 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "128 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "129 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "129 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "130 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "130 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "131 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "131 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "132 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1056,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "132 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "133 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "133 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "134 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "134 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "135 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "135 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "136 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "136 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "137 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "137 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "138 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "138 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "139 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "139 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "140 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "140 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "141 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "141 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "142 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "142 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "143 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "143 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "144 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "144 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "145 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1440,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "145 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "146 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "146 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "147 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "147 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "148 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "148 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "149 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "149 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "150 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "150 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "151 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "151 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "152 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "152 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "153 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "153 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "154 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "154 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "155 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "155 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "156 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "156 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "157 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "157 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "158 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "158 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "159 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "159 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "160 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "160 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "161 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "161 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "162 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "162 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "163 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "163 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "164 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2208,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "164 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "165 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2208,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "165 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "166 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2208,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "166 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "167 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2208,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "167 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "168 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2208,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "168 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "169 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2208,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "169 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "170 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2400,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "170 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "171 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2400,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "171 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "172 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2400,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "172 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "173 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2400,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "173 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "174 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2400,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "174 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "175 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2592,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "175 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "176 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2592,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "176 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "177 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2592,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "177 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "179 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2784,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "179 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "180 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2784,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "180 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "183 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2592,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "183 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "184 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2976,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "184 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "185 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2976,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "185 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "186 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2976,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "186 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "187 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 672,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "187 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "188 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 864,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "188 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "189 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1248,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "189 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "190 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1632,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "190 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "191 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 1824,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "191 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "192 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "192 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "193 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2016,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "193 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "194 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2400,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "194 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "195 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2784,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "195 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "196 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 96,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "196 GENCAVB"
+          }
+        ]
+      },
+      {
+        "name": "197 GEN_CAV",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 288,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "197 GEN_CAV"
+          }
+        ]
+      },
+      {
+        "name": "198 GENCAVB",
+        "map_locations": [
+          {
+            "map": "section3",
+            "x": 2784,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "198 GENCAVB"
           }
         ]
       }
     ]
   },
   {
-    "name": "Caves Entrance",
+    "name": "4 \u00b7 Zanthia (before trap door)",
     "children": [
       {
-        "name": "Wishing Well - Drop Coin",
+        "name": "37 PLTCAVE",
         "map_locations": [
           {
-            "map": "caves_entrance",
-            "x": 44,
-            "y": 40
+            "map": "section4",
+            "x": 672,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010060"
-            ]
+            "name": "37 PLTCAVE"
           }
         ]
       },
       {
-        "name": "Caves - Fireberries",
+        "name": "38 PLATEAU",
         "map_locations": [
           {
-            "map": "caves_entrance",
-            "x": 116,
-            "y": 40
+            "map": "section4",
+            "x": 864,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010061"
-            ]
+            "name": "38 PLATEAU"
           }
         ]
       },
       {
-        "name": "Caves - Break the Ice",
+        "name": "39 BONKBG",
         "map_locations": [
           {
-            "map": "caves_entrance",
-            "x": 188,
-            "y": 40
+            "map": "section4",
+            "x": 1056,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010062"
-            ]
+            "name": "39 BONKBG"
           }
         ]
       },
       {
-        "name": "Caves - Onyx Gem",
+        "name": "40 FALLS",
         "map_locations": [
           {
-            "map": "caves_entrance",
-            "x": 260,
-            "y": 40
+            "map": "section4",
+            "x": 96,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010063"
-            ]
+            "name": "40 FALLS"
           }
         ]
       },
       {
-        "name": "Caves - Opal Gem",
+        "name": "41 BURN",
         "map_locations": [
           {
-            "map": "caves_entrance",
-            "x": 332,
-            "y": 40
+            "map": "section4",
+            "x": 672,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010064"
-            ]
+            "name": "41 BURN"
           }
         ]
       },
       {
-        "name": "Caves - Pearl Gem",
+        "name": "42 FOUNTN",
         "map_locations": [
           {
-            "map": "caves_entrance",
-            "x": 404,
-            "y": 40
+            "map": "section4",
+            "x": 1248,
+            "y": 180
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010065"
-            ]
+            "name": "42 FOUNTN"
+          }
+        ]
+      },
+      {
+        "name": "43 FORESTC",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1440,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "43 FORESTC"
+          }
+        ]
+      },
+      {
+        "name": "44 EXTPOT",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1632,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "44 EXTPOT"
+          }
+        ]
+      },
+      {
+        "name": "45 POTION",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1824,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "45 POTION"
+          }
+        ]
+      },
+      {
+        "name": "46 FORESTA",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1056,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "46 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "47 GLADE",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1248,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "47 GLADE"
+          }
+        ]
+      },
+      {
+        "name": "53 FWSTSTH",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1248,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "53 FWSTSTH"
+          }
+        ]
+      },
+      {
+        "name": "54 FWSTSTH",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 288,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "54 FWSTSTH"
+          }
+        ]
+      },
+      {
+        "name": "55 FORESTB",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1056,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "55 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "56 EDGEB",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 96,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "56 EDGEB"
+          }
+        ]
+      },
+      {
+        "name": "57 FORESTA",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 288,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "57 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "58 FNORTH",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 480,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "58 FNORTH"
+          }
+        ]
+      },
+      {
+        "name": "59 XEDGEB",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 672,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "59 XEDGEB"
+          }
+        ]
+      },
+      {
+        "name": "60 FORESTB",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 864,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "60 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "61 EDGE",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1440,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "61 EDGE"
+          }
+        ]
+      },
+      {
+        "name": "62 EDGEB",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 672,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "62 EDGEB"
+          }
+        ]
+      },
+      {
+        "name": "63 FSOUTH",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 864,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "63 FSOUTH"
+          }
+        ]
+      },
+      {
+        "name": "64 FSOUTHB",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1056,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "64 FSOUTHB"
+          }
+        ]
+      },
+      {
+        "name": "65 EDGE",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 1248,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "65 EDGE"
+          }
+        ]
+      },
+      {
+        "name": "73 XEDGE",
+        "map_locations": [
+          {
+            "map": "section4",
+            "x": 864,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "73 XEDGE"
           }
         ]
       }
     ]
   },
   {
-    "name": "Inner Caves",
+    "name": "5 \u00b7 After the Trap Door",
     "children": [
       {
-        "name": "Lava - Iron Key",
+        "name": "49 MIX",
         "map_locations": [
           {
-            "map": "inner_caves",
-            "x": 44,
-            "y": 40
+            "map": "section5",
+            "x": 288,
+            "y": 780
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010080"
-            ]
+            "name": "49 MIX"
           }
         ]
       },
       {
-        "name": "Caves - Crystal Ball",
+        "name": "52 LAGOON",
         "map_locations": [
           {
-            "map": "inner_caves",
-            "x": 116,
-            "y": 40
+            "map": "section5",
+            "x": 864,
+            "y": 60
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010081"
-            ]
+            "name": "52 LAGOON"
           }
         ]
       },
       {
-        "name": "Inner Caves - Loose Rock",
+        "name": "75 FORESTA",
         "map_locations": [
           {
-            "map": "inner_caves",
-            "x": 188,
-            "y": 40
+            "map": "section5",
+            "x": 672,
+            "y": 780
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010082"
-            ]
+            "name": "75 FORESTA"
           }
         ]
       },
       {
-        "name": "Inner Caves - Lodestone Gem",
+        "name": "80 STUMP",
         "map_locations": [
           {
-            "map": "inner_caves",
-            "x": 260,
-            "y": 40
+            "map": "section5",
+            "x": 288,
+            "y": 420
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010083"
-            ]
+            "name": "80 STUMP"
+          }
+        ]
+      },
+      {
+        "name": "81 NWCLIFF",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 288,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "81 NWCLIFF"
+          }
+        ]
+      },
+      {
+        "name": "82 NCLIFFB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 480,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "82 NCLIFFB"
+          }
+        ]
+      },
+      {
+        "name": "83 NCLIFF",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 672,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "83 NCLIFF"
+          }
+        ]
+      },
+      {
+        "name": "84 FORESTB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "84 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "85 NWCLIFB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 1056,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "85 NWCLIFB"
+          }
+        ]
+      },
+      {
+        "name": "86 FORESTB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 288,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "86 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "87 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 480,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "87 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "88 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "88 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "89 XEDGEB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 1056,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "89 XEDGEB"
+          }
+        ]
+      },
+      {
+        "name": "90 FSOUTHB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 480,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "90 FSOUTHB"
+          }
+        ]
+      },
+      {
+        "name": "91 FSOUTH",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 672,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "91 FSOUTH"
+          }
+        ]
+      },
+      {
+        "name": "92 FORESTB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "92 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "93 EDGE",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 1056,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "93 EDGE"
+          }
+        ]
+      },
+      {
+        "name": "94 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 288,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "94 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "95 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "95 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "96 FORESTB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 96,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "96 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "97 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 288,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "97 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "98 FNORTH",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 480,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "98 FNORTH"
+          }
+        ]
+      },
+      {
+        "name": "99 FNORTH",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 672,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "99 FNORTH"
+          }
+        ]
+      },
+      {
+        "name": "100 EDGE",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "100 EDGE"
+          }
+        ]
+      },
+      {
+        "name": "101 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 96,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "101 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "102 FORESTB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 480,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "102 FORESTB"
+          }
+        ]
+      },
+      {
+        "name": "103 XEDGEB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "103 XEDGEB"
+          }
+        ]
+      },
+      {
+        "name": "104 EDGEB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 96,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "104 EDGEB"
+          }
+        ]
+      },
+      {
+        "name": "105 FORESTA",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 288,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "105 FORESTA"
+          }
+        ]
+      },
+      {
+        "name": "106 FSOUTH",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 480,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "106 FSOUTH"
+          }
+        ]
+      },
+      {
+        "name": "107 FSOUTHB",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 672,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "107 FSOUTHB"
+          }
+        ]
+      },
+      {
+        "name": "108 EDGE",
+        "map_locations": [
+          {
+            "map": "section5",
+            "x": 864,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "108 EDGE"
           }
         ]
       }
     ]
   },
   {
-    "name": "Act3 Wilds",
+    "name": "6 \u00b7 The Castle",
     "children": [
       {
-        "name": "Zanthia - Magic Water",
+        "name": "199 LANDING",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 44,
-            "y": 40
+            "map": "section6",
+            "x": 1440,
+            "y": 1500
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010100"
-            ]
+            "name": "199 LANDING"
           }
         ]
       },
       {
-        "name": "Zanthia - Empty Flask",
+        "name": "200 GRAVE",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 116,
-            "y": 40
+            "map": "section6",
+            "x": 1632,
+            "y": 1500
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010101"
-            ]
+            "name": "200 GRAVE"
           }
         ]
       },
       {
-        "name": "Blueberry Field - Blueberries",
+        "name": "201 FORESTA",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 188,
-            "y": 40
+            "map": "section6",
+            "x": 1632,
+            "y": 1380
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010102"
-            ]
+            "name": "201 FORESTA"
           }
         ]
       },
       {
-        "name": "Secret Passage - Rainbowstone",
+        "name": "202 FORESTB",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 260,
-            "y": 40
+            "map": "section6",
+            "x": 1632,
+            "y": 1620
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010103"
-            ]
+            "name": "202 FORESTB"
           }
         ]
       },
       {
-        "name": "Crystal Towers - Orchid",
+        "name": "203 CASTLE",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 332,
-            "y": 40
+            "map": "section6",
+            "x": 1824,
+            "y": 1500
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010104"
-            ]
+            "name": "203 CASTLE"
           }
         ]
       },
       {
-        "name": "Act3 - Tulip",
+        "name": "204 CGATE",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 404,
-            "y": 40
+            "map": "section6",
+            "x": 1824,
+            "y": 1380
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010105"
-            ]
+            "name": "204 CGATE"
           }
         ]
       },
       {
-        "name": "Floating Chalice - Royal Chalice",
+        "name": "205 DNSTAIR",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 44,
-            "y": 96
+            "map": "section6",
+            "x": 1440,
+            "y": 1260
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010106"
-            ]
+            "name": "205 DNSTAIR"
           }
         ]
       },
       {
-        "name": "Act3 - Sunstone Gem",
+        "name": "206 GRTHALL",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 116,
-            "y": 96
+            "map": "section6",
+            "x": 1248,
+            "y": 1020
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010107"
-            ]
+            "name": "206 GRTHALL"
           }
         ]
       },
       {
-        "name": "Act3 - Garnet Gem",
+        "name": "207 LIBRARY",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 188,
-            "y": 96
+            "map": "section6",
+            "x": 864,
+            "y": 780
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010108"
-            ]
+            "name": "207 LIBRARY"
           }
         ]
       },
       {
-        "name": "Zanthia - Brew Blue Potion",
+        "name": "208 KITCHEN",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 260,
-            "y": 96
+            "map": "section6",
+            "x": 1824,
+            "y": 1020
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010109"
-            ]
+            "name": "208 KITCHEN"
           }
         ]
       },
       {
-        "name": "Zanthia - Brew Red Potion",
+        "name": "209 FOYER",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 332,
-            "y": 96
+            "map": "section6",
+            "x": 1248,
+            "y": 900
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010110"
-            ]
+            "name": "209 FOYER"
           }
         ]
       },
       {
-        "name": "Zanthia - Brew Yellow Potion",
+        "name": "210 KYRAGEM",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 404,
-            "y": 96
+            "map": "section6",
+            "x": 1248,
+            "y": 780
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010111"
-            ]
+            "name": "210 KYRAGEM"
           }
         ]
       },
       {
-        "name": "Zanthia - Brew Purple Potion",
+        "name": "211 GENHALL",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 44,
-            "y": 152
+            "map": "section6",
+            "x": 1248,
+            "y": 1260
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010112"
-            ]
+            "name": "211 GENHALL"
           }
         ]
       },
       {
-        "name": "Zanthia - Brew Orange Potion",
+        "name": "212 GENHALL",
         "map_locations": [
           {
-            "map": "act3_wilds",
-            "x": 116,
-            "y": 152
+            "map": "section6",
+            "x": 1632,
+            "y": 1260
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010113"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Grave Island",
-    "children": [
-      {
-        "name": "Grave Island - Fallen Star",
-        "map_locations": [
-          {
-            "map": "grave_island",
-            "x": 44,
-            "y": 40
-          }
-        ],
-        "sections": [
-          {
-            "access_rules": [
-              "^$kyra_loc|1010130"
-            ]
+            "name": "212 GENHALL"
           }
         ]
       },
       {
-        "name": "Grave Island - Diamond Gem",
+        "name": "213 GENHALL",
         "map_locations": [
           {
-            "map": "grave_island",
-            "x": 116,
-            "y": 40
+            "map": "section6",
+            "x": 1056,
+            "y": 1020
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010131"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Castle",
-    "children": [
-      {
-        "name": "Castle Library - Book Puzzle (Crown)",
-        "map_locations": [
-          {
-            "map": "castle",
-            "x": 44,
-            "y": 40
-          }
-        ],
-        "sections": [
-          {
-            "access_rules": [
-              "^$kyra_loc|1010140"
-            ]
+            "name": "213 GENHALL"
           }
         ]
       },
       {
-        "name": "Castle Upstairs - Open Safe (Gold Key)",
+        "name": "214 GENHALL",
         "map_locations": [
           {
-            "map": "castle",
-            "x": 116,
-            "y": 40
+            "map": "section6",
+            "x": 1632,
+            "y": 1140
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010141"
-            ]
+            "name": "214 GENHALL"
           }
         ]
       },
       {
-        "name": "Castle Upstairs - Music Puzzle",
+        "name": "215 GENHALL",
         "map_locations": [
           {
-            "map": "castle",
-            "x": 188,
-            "y": 40
+            "map": "section6",
+            "x": 1632,
+            "y": 1020
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010142"
-            ]
+            "name": "215 GENHALL"
           }
         ]
       },
       {
-        "name": "Castle Upstairs - Sceptre",
+        "name": "216 GENHALL",
         "map_locations": [
           {
-            "map": "castle",
-            "x": 260,
-            "y": 40
+            "map": "section6",
+            "x": 1248,
+            "y": 1140
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010143"
-            ]
+            "name": "216 GENHALL"
           }
         ]
       },
       {
-        "name": "Castle Kitchen - Pickup",
+        "name": "217 GENHALL",
         "map_locations": [
           {
-            "map": "castle",
-            "x": 332,
-            "y": 40
+            "map": "section6",
+            "x": 1440,
+            "y": 1020
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010144"
-            ]
+            "name": "217 GENHALL"
           }
         ]
       },
       {
-        "name": "Castle - Mallet",
+        "name": "218 GENHALL",
         "map_locations": [
           {
-            "map": "castle",
-            "x": 404,
-            "y": 40
+            "map": "section6",
+            "x": 1056,
+            "y": 900
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010145"
-            ]
+            "name": "218 GENHALL"
           }
         ]
       },
       {
-        "name": "Castle - Mirror",
+        "name": "219 GENHALL",
         "map_locations": [
           {
-            "map": "castle",
-            "x": 44,
-            "y": 96
+            "map": "section6",
+            "x": 1440,
+            "y": 900
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010146"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Catacombs",
-    "children": [
-      {
-        "name": "Catacombs - Hidden Key",
-        "map_locations": [
-          {
-            "map": "catacombs",
-            "x": 44,
-            "y": 40
-          }
-        ],
-        "sections": [
-          {
-            "access_rules": [
-              "^$kyra_loc|1010160"
-            ]
+            "name": "219 GENHALL"
           }
         ]
       },
       {
-        "name": "Catacombs - Aquamarine Gem",
+        "name": "220 GENHALL",
         "map_locations": [
           {
-            "map": "catacombs",
-            "x": 116,
-            "y": 40
+            "map": "section6",
+            "x": 672,
+            "y": 660
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_loc|1010161"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Powers & Goal",
-    "children": [
-      {
-        "name": "Heal Spell",
-        "map_locations": [
-          {
-            "map": "powers",
-            "x": 44,
-            "y": 40
-          }
-        ],
-        "sections": [
-          {
-            "access_rules": [
-              "^$kyra_event|Heal Spell"
-            ]
+            "name": "220 GENHALL"
           }
         ]
       },
       {
-        "name": "Wisp Spell",
+        "name": "221 GENHALL",
         "map_locations": [
           {
-            "map": "powers",
-            "x": 116,
-            "y": 40
+            "map": "section6",
+            "x": 1056,
+            "y": 660
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_event|Wisp Spell"
-            ]
+            "name": "221 GENHALL"
           }
         ]
       },
       {
-        "name": "Red Spell",
+        "name": "222 GENHALL",
         "map_locations": [
           {
-            "map": "powers",
-            "x": 188,
-            "y": 40
+            "map": "section6",
+            "x": 864,
+            "y": 540
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_event|Red Spell"
-            ]
+            "name": "222 GENHALL"
           }
         ]
       },
       {
-        "name": "Blue Spell",
+        "name": "223 BRINS",
         "map_locations": [
           {
-            "map": "powers",
-            "x": 260,
-            "y": 40
+            "map": "section6",
+            "x": 480,
+            "y": 660
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_event|Blue Spell"
-            ]
+            "name": "223 BRINS"
           }
         ]
       },
       {
-        "name": "Defeat Malcolm (Goal)",
+        "name": "224 DARMS",
         "map_locations": [
           {
-            "map": "powers",
-            "x": 332,
-            "y": 40
+            "map": "section6",
+            "x": 1248,
+            "y": 660
           }
         ],
         "sections": [
           {
-            "access_rules": [
-              "^$kyra_goal"
-            ]
+            "name": "224 DARMS"
+          }
+        ]
+      },
+      {
+        "name": "225 ALCHEMY",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 1632,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "225 ALCHEMY"
+          }
+        ]
+      },
+      {
+        "name": "226 BELROOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 864,
+            "y": 900
+          }
+        ],
+        "sections": [
+          {
+            "name": "226 BELROOM"
+          }
+        ]
+      },
+      {
+        "name": "227 UPSTAIR",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 1440,
+            "y": 1140
+          }
+        ],
+        "sections": [
+          {
+            "name": "227 UPSTAIR"
+          }
+        ]
+      },
+      {
+        "name": "228 BALCONY",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 1056,
+            "y": 780
+          }
+        ],
+        "sections": [
+          {
+            "name": "228 BALCONY"
+          }
+        ]
+      },
+      {
+        "name": "229 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 96,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "229 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "230 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 288,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "230 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "231 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 96,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "231 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "232 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 288,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "232 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "233 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 480,
+            "y": 180
+          }
+        ],
+        "sections": [
+          {
+            "name": "233 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "234 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 480,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "234 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "235 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 96,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "235 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "236 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 288,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "236 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "237 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 480,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "237 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "238 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 672,
+            "y": 300
+          }
+        ],
+        "sections": [
+          {
+            "name": "238 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "239 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 96,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "239 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "240 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 288,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "240 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "241 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 480,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "241 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "242 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 672,
+            "y": 420
+          }
+        ],
+        "sections": [
+          {
+            "name": "242 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "243 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 288,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "243 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "244 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 480,
+            "y": 540
+          }
+        ],
+        "sections": [
+          {
+            "name": "244 CATACOM"
+          }
+        ]
+      },
+      {
+        "name": "245 CATACOM",
+        "map_locations": [
+          {
+            "map": "section6",
+            "x": 864,
+            "y": 660
+          }
+        ],
+        "sections": [
+          {
+            "name": "245 CATACOM"
           }
         ]
       }

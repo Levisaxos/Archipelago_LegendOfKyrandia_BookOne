@@ -27,6 +27,21 @@ lines. Built up as we play; **confidence** noted per entry. Flag id is decimal
 > So "open a staged gate" = swap its nameIndex, not set a flag.
 | 9  | 0x09 | Crossed the fixed bridge / Herman leaves to find the saw (post-fix). | Med |
 | 138| 0x8A | **Willow healed** — set on "I healed the willow tree!" (teardrop placed in the sick willow). | High |
+| 71 | 0x47 | **Malcolm encounter done** (dragon's mouth, scene 25) — set when Malcolm freezes the cave; keeps him from re-triggering. | **High** |
+| 82 | 0x52 | **Dragon's-mouth ice / cave block** (scene 25) — set at the freeze; while set the cave is iced & impassable. **Re-open = reset 82, keep 71 set** (ice gone, Malcolm stays gone). | **High** |
+| 117 | 0x75 | **Cave rock-gate "puzzle complete"** (scene 115 GATECV) — set when the 5-rock plate puzzle finishes ("I can get back outside"). Renders as gate-open **AND** rocks-on-plate, so forcing it makes the puzzle look already-done (can't throw rocks). | **High** |
+
+> **Cave rock-gate — DECOUPLED (implemented).** We do NOT set 117 (it couples
+> gate-open with puzzle-done/rocks-shown). The west exit (`_walkBlockWest` = 197) is
+> defined the whole time, but the closed gate (a) makes the scene click-script swallow
+> the left-edge click and (b) collision-blocks Brandon's walk path. Fix (processInput,
+> kyra_lok.cpp): on a left-edge click in scene 115, **teleport straight to 197**
+> (facing 6) before the script eats it — bypassing both. The 5-rock puzzle (flags 116,
+> 118–122) is left fully intact → still the spot for the future "placed the rocks"
+> check. **Cosmetic TODO:** it's an instant teleport (no walk) and the gate still
+> *looks* closed — could clear the walk-mask + hide the gate sprite for polish.
+| 116 | 0x74 | Cave rock-gate: plate active / puzzle started (scene 115, set on entry). | High |
+| 118–122 | 0x76–0x7A | Cave rock-gate: the **5 rock throws** (one flag per throw, incl. the miss). Left untouched by always-open so the puzzle still plays → future "placed rocks" check. | High |
 | 42 | 0x2A | **Altar repaired** — marble placed on the altar ("Perfect fit! Must be fixed now"). | High |
 | 45 | 0x2D | **Amulet manifested** at the altar (after a rose is placed → silver rose → amulet appears). | High |
 | 7  | 0x07 | **Royal Amulet obtained.** | High |

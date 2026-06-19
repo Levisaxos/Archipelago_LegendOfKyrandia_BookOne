@@ -22,14 +22,18 @@
 
 #include "kyra/debugger.h"
 #include "kyra/kyra_lok.h"
+#include "kyra/animator_lok.h"
 #include "kyra/kyra_hof.h"
 #include "kyra/timer.h"
 #include "kyra/resource.h"
 #include "kyra/lol.h"
 #include "kyra/eobcommon.h"
+#include "kyra/wsamovie.h"
 
 #include "common/system.h"
 #include "common/config-manager.h"
+#include "common/file.h"
+#include "common/util.h"
 
 namespace Kyra {
 
@@ -214,7 +218,84 @@ void Debugger_LoK::initialize() {
 	registerCmd("scenes",             WRAP_METHOD(Debugger_LoK, cmdListScenes));
 	registerCmd("give",               WRAP_METHOD(Debugger_LoK, cmdGiveItem));
 	registerCmd("birthstones",        WRAP_METHOD(Debugger_LoK, cmdListBirthstones));
+	registerCmd("dumpscenes",         WRAP_METHOD(Debugger_LoK, cmdDumpScenes));
+	registerCmd("dumproomtable",      WRAP_METHOD(Debugger_LoK, cmdDumpRoomTable));
+	registerCmd("dumpitems",          WRAP_METHOD(Debugger_LoK, cmdDumpItems));
+	registerCmd("dumpamulet",         WRAP_METHOD(Debugger_LoK, cmdDumpAmulet));
 	Debugger::initialize();
+}
+
+// AP dev: write a sub-region of a kyra screen page (8bpp indexed) out as a 24-bit BMP,
+// expanding each palette index through the currently applied palette (slot 0) and
+// nearest-neighbour upscaling by an integer factor. 24-bit keeps it viewer-agnostic and
+// sidesteps indexed-BMP palette quirks; integer scaling adds no detail, just bigger pixels.
+static void dumpRegionToBmp(Screen *screen, int page, int srcX, int srcY, int srcW, int srcH,
+                            int scale, const Common::String &filename) {
+	if (scale < 1)
+		scale = 1;
+
+	uint8 *indices = new uint8[srcW * srcH];
+	screen->copyRegionToBuffer(page, srcX, srcY, srcW, srcH, indices);
+	uint8 *pal = screen->getPalette(0).fetchRealPalette();   // 256 * RGB, caller deletes
+
+	Common::DumpFile out;
+	if (!out.open(filename, true)) {   // createPath: makes the output dir if needed
+		warning("APDUMP could not open %s for writing", filename.c_str());
+		delete[] indices;
+		delete[] pal;
+		return;
+	}
+
+	const int outW = srcW * scale;
+	const int outH = srcH * scale;
+	const uint32 stride = outW * 3;
+	const uint32 pad = (4 - (stride & 3)) & 3;   // BMP rows are 4-byte aligned
+	const uint32 rowSize = stride + pad;
+	const uint32 imageSize = rowSize * outH;
+	const uint32 dataOffset = 14 + 40;
+
+	// BITMAPFILEHEADER
+	out.writeByte('B');
+	out.writeByte('M');
+	out.writeUint32LE(dataOffset + imageSize);
+	out.writeUint32LE(0);
+	out.writeUint32LE(dataOffset);
+	// BITMAPINFOHEADER
+	out.writeUint32LE(40);
+	out.writeUint32LE(outW);
+	out.writeUint32LE(outH);
+	out.writeUint16LE(1);
+	out.writeUint16LE(24);
+	out.writeUint32LE(0);
+	out.writeUint32LE(imageSize);
+	out.writeUint32LE(0);
+	out.writeUint32LE(0);
+	out.writeUint32LE(0);
+	out.writeUint32LE(0);
+
+	// Pixel rows are stored bottom-up and as BGR; each source pixel becomes a scale x scale block.
+	uint8 *row = new uint8[rowSize];
+	for (int oy = outH - 1; oy >= 0; --oy) {
+		const uint8 *src = indices + (oy / scale) * srcW;
+		uint8 *d = row;
+		for (int sx = 0; sx < srcW; ++sx) {
+			const uint8 *c = pal + src[sx] * 3;
+			for (int s = 0; s < scale; ++s) {
+				*d++ = c[2];   // B
+				*d++ = c[1];   // G
+				*d++ = c[0];   // R
+			}
+		}
+		for (uint32 p = 0; p < pad; ++p)
+			*d++ = 0;
+		out.write(row, rowSize);
+	}
+	delete[] row;
+
+	out.finalize();
+	out.close();
+	delete[] indices;
+	delete[] pal;
 }
 
 bool Debugger_LoK::cmdEnterRoom(int argc, const char **argv) {
@@ -223,8 +304,23 @@ bool Debugger_LoK::cmdEnterRoom(int argc, const char **argv) {
 		int room = atoi(argv[1]);
 
 		// game will crash if entering a non-existent room
-		if (room >= _vm->_roomTableSize) {
+		if (room < 0 || room >= _vm->_roomTableSize) {
 			debugPrintf("room number must be any value between (including) 0 and %d\n", _vm->_roomTableSize - 1);
+			return true;
+		}
+
+		// some in-range room slots have no actual room data (invalid nameIndex) and
+		// would crash on load — reject those instead of entering them.
+		if (_vm->_roomTable[room].nameIndex >= _vm->_roomFilenameTableSize) {
+			debugPrintf("room %d is not a valid scene (no room data)\n", room);
+			return true;
+		}
+
+		// unused slots can have an in-range nameIndex but no real room (no exits) and
+		// still crash on a cold teleport — reject those too. Real scenes have >=1 exit.
+		if (_vm->_roomTable[room].northExit == 0xFFFF && _vm->_roomTable[room].eastExit == 0xFFFF &&
+		    _vm->_roomTable[room].southExit == 0xFFFF && _vm->_roomTable[room].westExit == 0xFFFF) {
+			debugPrintf("room %d has no exits (likely not a real scene)\n", room);
 			return true;
 		}
 
@@ -264,6 +360,197 @@ bool Debugger_LoK::cmdListScenes(int argc, const char **argv) {
 	}
 	debugPrintf("\n");
 	debugPrintf("Current room: %i\n", _vm->_currentRoom);
+	return true;
+}
+
+// AP dev: walk every room and dump one BMP each — the rendered in-game view with the
+// background, ground items and scene animations, but with the actor sprites (Brandon +
+// NPCs) suppressed. Files land in a "dumps" subfolder of ScummVM's working directory
+// as dumps/kyra_scene_<NNN>_<ROOM>.bmp.
+// Usage: dumpscenes [first] [last]
+bool Debugger_LoK::cmdDumpScenes(int argc, const char **argv) {
+	int first = 0;
+	int last = _vm->_roomTableSize - 1;
+	if (argc > 1)
+		first = atoi(argv[1]);
+	if (argc > 2)
+		last = atoi(argv[2]);
+	first = CLIP(first, 0, _vm->_roomTableSize - 1);
+	last = CLIP(last, first, _vm->_roomTableSize - 1);
+
+	const int savedRoom = _vm->_currentCharacter->sceneId;
+	const int savedFacing = _vm->_currentCharacter->facing;
+
+	// Capture static scenes: don't run the per-scene entry scripts (cutscenes/dialogue).
+	_vm->_dumpSceneMode = true;
+
+	int count = 0;
+	for (int room = first; room <= last; ++room) {
+		if (_vm->_roomTable[room].nameIndex >= _vm->_roomFilenameTableSize)
+			continue;
+
+		const char *name = _vm->_roomFilenameTable[_vm->_roomTable[room].nameIndex];
+
+		// Skip dead/placeholder room-table entries whose scene data was never shipped
+		// (e.g. MAPLE) — entering one would crash on the missing scene file. Real rooms
+		// ship a loose archive (talkie: NAME.PAK/.VRM/.APK that setupSceneResource mounts)
+		// or have NAME.DAT in the global archive (non-talkie). MAPLE has none of these.
+		Common::String base(name);
+		bool hasData = _vm->_res->exists((base + ".PAK").c_str())
+		            || _vm->_res->exists((base + ".VRM").c_str())
+		            || _vm->_res->exists((base + ".APK").c_str())
+		            || _vm->_res->exists((base + ".DAT").c_str());
+		if (!hasData) {
+			debugPrintf("skipped %d: %s (no data file)\n", room, name);
+			continue;
+		}
+
+		_vm->enterNewScene(room, _vm->_currentCharacter->facing, 0, 0, 1);
+
+		// Re-composite the play area (page 2 -> page 0) with actors suppressed, so the
+		// scene art, items and animations remain but Brandon/NPCs are erased.
+		_vm->_animator->_noDrawCharactersFlag = 1;
+		_vm->_animator->restoreAllObjectBackgrounds();   // erase all sprites from page 2
+		_vm->_animator->prepDrawAllObjects();            // redraw items/anims only (no actors)
+		_vm->_screen->copyRegion(8, 8, 8, 8, 304, 128, 2, 0, Screen::CR_NO_P_CHECK);
+		_vm->_animator->_noDrawCharactersFlag = 0;
+
+		// Capture only the scene viewport (304x128 at 8,8) — no UI border, name bar,
+		// OPTIONS or inventory — upscaled 2x to 608x256.
+		Common::String path = Common::String::format("dumps/kyra_scene_%03d_%s.bmp", room, name);
+		dumpRegionToBmp(_vm->_screen, 0, 8, 8, 304, 128, 2, path);
+
+		// Redraw actors so the live view is consistent again before the next entry.
+		_vm->_animator->updateAllObjectShapes();
+
+		++count;
+		debugPrintf("dumped %d: %s\n", room, name);
+	}
+
+	// Restore normal scripting and re-enter the player's original scene properly.
+	_vm->_dumpSceneMode = false;
+	_vm->enterNewScene(savedRoom, savedFacing, 0, 0, 1);
+	while (!_vm->_screen->isMouseVisible())
+		_vm->_screen->showMouse();
+
+	debugPrintf("Done. Dumped %d character-free scenes to the 'dumps' folder.\n", count);
+	return true;
+}
+
+// AP dev: dump the room exit table as CSV (id,name,north,east,south,west) to
+// dumps/room_table.csv (and echo to the console). Exit value 0xFFFF (no exit) is
+// written as -1. This is the spatial adjacency that drives the PopTracker scene
+// grid: north -> row-1, south -> row+1, east -> col+1, west -> col-1.
+// Usage: dumproomtable
+bool Debugger_LoK::cmdDumpRoomTable(int argc, const char **argv) {
+	Common::DumpFile out;
+	bool toFile = out.open("dumps/room_table.csv");
+	if (!toFile)
+		debugPrintf("Could not open dumps/room_table.csv; printing to console only.\n");
+
+	const char *header = "id,name,north,east,south,west\n";
+	if (toFile)
+		out.writeString(header);
+	debugPrintf("%s", header);
+
+	for (int i = 0; i < _vm->_roomTableSize; i++) {
+		const char *name = (_vm->_roomTable[i].nameIndex < _vm->_roomFilenameTableSize)
+		                       ? _vm->_roomFilenameTable[_vm->_roomTable[i].nameIndex] : "?";
+		int n = (_vm->_roomTable[i].northExit == 0xFFFF) ? -1 : _vm->_roomTable[i].northExit;
+		int e = (_vm->_roomTable[i].eastExit  == 0xFFFF) ? -1 : _vm->_roomTable[i].eastExit;
+		int s = (_vm->_roomTable[i].southExit == 0xFFFF) ? -1 : _vm->_roomTable[i].southExit;
+		int w = (_vm->_roomTable[i].westExit  == 0xFFFF) ? -1 : _vm->_roomTable[i].westExit;
+		Common::String line = Common::String::format("%d,%s,%d,%d,%d,%d\n", i, name, n, e, s, w);
+		if (toFile)
+			out.writeString(line);
+		debugPrintf("%s", line.c_str());
+	}
+
+	if (toFile) {
+		out.close();
+		debugPrintf("Wrote %d rooms to dumps/room_table.csv\n", _vm->_roomTableSize);
+	}
+	return true;
+}
+
+// AP dev: dump every inventory item sprite (16x16) to dumps/kyra_item_<NNN>.bmp.
+// Items live at _shapes[216 + id] (id 0..106; some alias to a shared shape). The shape
+// is drawn onto a box pre-filled with colour 0; palette index 0 is temporarily forced
+// to magenta so the transparent background keys out cleanly in post-processing. Sprites
+// are integer-upscaled (x4 -> 64x64) for visibility / use as PopTracker icons.
+// Usage: dumpitems
+bool Debugger_LoK::cmdDumpItems(int argc, const char **argv) {
+	const int X = 16, Y = 16, W = 16, H = 16, SCALE = 4;
+
+	// Force colour 0 (the shape transparency index) to magenta in the dump palette,
+	// without touching the live display (no setScreenPalette). Restored at the end.
+	Palette &pal = _vm->_screen->getPalette(0);
+	const uint8 sr = pal[0], sg = pal[1], sb = pal[2];
+	pal[0] = 63; pal[1] = 0; pal[2] = 63;   // 6-bit VGA magenta -> 0xFF00FF in the BMP
+
+	int count = 0;
+	for (int item = 0; item <= 106; ++item) {
+		if (!_vm->_shapes[216 + item])
+			continue;
+		_vm->_screen->fillRect(X, Y, X + W - 1, Y + H - 1, 0, 0);
+		_vm->_screen->drawShape(0, _vm->_shapes[216 + item], X, Y, 0, 0);
+		Common::String path = Common::String::format("dumps/kyra_item_%03d.bmp", item);
+		dumpRegionToBmp(_vm->_screen, 0, X, Y, W, H, SCALE, path);
+		++count;
+	}
+
+	pal[0] = sr; pal[1] = sg; pal[2] = sb;   // restore index 0
+	debugPrintf("Done. Dumped %d item sprites (16x16, x%d) to the 'dumps' folder.\n",
+	            count, SCALE);
+	return true;
+}
+
+// AP dev: dump the amulet UI graphic and its four power jewels. The base amulet is the
+// AMULET.WSA movie (played via _amuleteAnim onto 224,152, same as o1_makeAmuletAppear);
+// the jewels are shapes 0x144-0x147 drawn at the four _amuletX/_amuletY anchor points
+// (same as drawAmulet). Produces dumps/kyra_amulet_full.bmp (base + all 4 jewels) and
+// kyra_amulet_pos0..3.bmp (base + a single jewel) so each power gets a distinct icon.
+// Palette index 0 is keyed magenta for clean transparency. Usage: dumpamulet
+bool Debugger_LoK::cmdDumpAmulet(int argc, const char **argv) {
+	const int BX = 216, BY = 150, BW = 96, BH = 50, SCALE = 4;
+	// jewel shape per anchor (matches the final frame of each amuletTable in drawAmulet).
+	const int jewelShape[4] = { 0x145, 0x147, 0x144, 0x146 };
+	const uint16 *jx = _vm->_amuletX, *jy = _vm->_amuletY;
+
+	Palette &pal = _vm->_screen->getPalette(0);
+	const uint8 sr = pal[0], sg = pal[1], sb = pal[2];
+	pal[0] = 63; pal[1] = 0; pal[2] = 63;   // magenta transparency key
+
+	Movie *amulet = _vm->createWSAMovie();
+	if (!amulet || !amulet->open("AMULET.WSA", 1, 0) || !amulet->opened()) {
+		debugPrintf("Could not open AMULET.WSA\n");
+		pal[0] = sr; pal[1] = sg; pal[2] = sb;
+		delete amulet;
+		return true;
+	}
+
+	// variant 0 = full amulet (all 4 jewels); variants 1..4 = base + single jewel i-1.
+	for (int variant = 0; variant <= 4; ++variant) {
+		_vm->_screen->fillRect(BX, BY, BX + BW - 1, BY + BH - 1, 0, 0);
+		for (int i = 0; _vm->_amuleteAnim[i] != 0xFF; ++i)
+			amulet->displayFrame(_vm->_amuleteAnim[i], 0, 224, 152, 0, 0, 0);
+
+		Common::String path;
+		if (variant == 0) {
+			for (int i = 0; i < 4; ++i)
+				_vm->_screen->drawShape(0, _vm->_shapes[jewelShape[i]], jx[i], jy[i], 0, 0);
+			path = "dumps/kyra_amulet_full.bmp";
+		} else {
+			int i = variant - 1;
+			_vm->_screen->drawShape(0, _vm->_shapes[jewelShape[i]], jx[i], jy[i], 0, 0);
+			path = Common::String::format("dumps/kyra_amulet_pos%d.bmp", i);
+		}
+		dumpRegionToBmp(_vm->_screen, 0, BX, BY, BW, BH, SCALE, path);
+	}
+
+	delete amulet;
+	pal[0] = sr; pal[1] = sg; pal[2] = sb;
+	debugPrintf("Done. Dumped amulet (full + 4 single-jewel) to the 'dumps' folder.\n");
 	return true;
 }
 
