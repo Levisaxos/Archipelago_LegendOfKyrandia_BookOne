@@ -432,5 +432,12 @@
     "img": "assets/items/amulet_blue.png",
     "disabled_img": "assets/items/amulet_blue_off.png",
     "codes": "amulet_blue"
+  },
+  {
+    "name": "Birthstones placed",
+    "type": "toggle",
+    "img": "assets/item_on.png",
+    "disabled_img": "assets/item_off.png",
+    "codes": "birthstones"
   }
 ]

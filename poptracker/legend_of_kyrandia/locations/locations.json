@@ -3388,5 +3388,1152 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Brandons Home",
+    "children": [
+      {
+        "name": "Brandon's Home - Kallak's Note",
+        "map_locations": [
+          {
+            "map": "checks_brandons_home",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Brandon's Home - Kallak's Note"
+          }
+        ]
+      },
+      {
+        "name": "Brandon's Home - Desk Drawer",
+        "map_locations": [
+          {
+            "map": "checks_brandons_home",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Brandon's Home - Desk Drawer"
+          }
+        ]
+      },
+      {
+        "name": "Brandon's Home - Garnet",
+        "map_locations": [
+          {
+            "map": "checks_brandons_home",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Brandon's Home - Garnet"
+          }
+        ]
+      },
+      {
+        "name": "Brandon's Home - Apple",
+        "map_locations": [
+          {
+            "map": "checks_brandons_home",
+            "x": 14,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "Brandon's Home - Apple"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Emerald Forest",
+    "children": [
+      {
+        "name": "Willow - Teardrop Catch",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Willow - Teardrop Catch"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Lavender Rose",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Lavender Rose"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Saw",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Saw"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Tulip",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Tulip"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Amethyst Gem",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 121
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Amethyst Gem"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Aquamarine Gem",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 147
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Aquamarine Gem"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Emerald Gem",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 173
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Emerald Gem"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Sapphire Gem",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 199
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Sapphire Gem"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Ruby Gem",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 225
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Ruby Gem"
+          }
+        ]
+      },
+      {
+        "name": "Forest - Opal Gem",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 251
+          }
+        ],
+        "sections": [
+          {
+            "name": "Forest - Opal Gem"
+          }
+        ]
+      },
+      {
+        "name": "Temple - Purple Rose",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 277
+          }
+        ],
+        "sections": [
+          {
+            "name": "Temple - Purple Rose"
+          }
+        ]
+      },
+      {
+        "name": "Brynn - Give Note & Rose (Silver Rose)",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 303
+          }
+        ],
+        "sections": [
+          {
+            "name": "Brynn - Give Note & Rose (Silver Rose)",
+            "access_rules": [
+              "lavender_rose,note"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Merith - Catch the Marble",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 329
+          }
+        ],
+        "sections": [
+          {
+            "name": "Merith - Catch the Marble",
+            "access_rules": [
+              "teardrop"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Altar - Rose & Marble (Amulet)",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 355
+          }
+        ],
+        "sections": [
+          {
+            "name": "Temple Altar - Rose & Marble (Amulet)",
+            "access_rules": [
+              "marble,silver_rose"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Herman - Repair Bridge (Saw turn-in)",
+        "map_locations": [
+          {
+            "map": "checks_emerald_forest",
+            "x": 14,
+            "y": 381
+          }
+        ],
+        "sections": [
+          {
+            "name": "Herman - Repair Bridge (Saw turn-in)",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Over The Bridge",
+    "children": [
+      {
+        "name": "Darm's Wood - Acorn",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Acorn",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm's Wood - Walnut",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Walnut",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm's Wood - Pinecone",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Pinecone",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm's Wood - Peridot Gem",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Peridot Gem",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm's Wood - Diamond Gem",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 121
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Diamond Gem",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm's Wood - Topaz Gem",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 147
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Topaz Gem",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm's Wood - Onyx Gem",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 173
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm's Wood - Onyx Gem",
+            "access_rules": [
+              "saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cardinal - Heal & Get Quill",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 199
+          }
+        ],
+        "sections": [
+          {
+            "name": "Cardinal - Heal & Get Quill",
+            "access_rules": [
+              "amulet_heal,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Darm - Give Quill (Scroll of Winter)",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 225
+          }
+        ],
+        "sections": [
+          {
+            "name": "Darm - Give Quill (Scroll of Winter)",
+            "access_rules": [
+              "feather,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Marble Altar - Birthstone Puzzle (Flute)",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 251
+          }
+        ],
+        "sections": [
+          {
+            "name": "Marble Altar - Birthstone Puzzle (Flute)",
+            "access_rules": [
+              "birthstones,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magic Well - Drop Coin (Moonstone)",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 277
+          }
+        ],
+        "sections": [
+          {
+            "name": "Magic Well - Drop Coin (Moonstone)",
+            "access_rules": [
+              "gold_coin,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deadwood Hole - Drop Nuts (Earn Heal Power)",
+        "map_locations": [
+          {
+            "map": "checks_over_the_bridge",
+            "x": 14,
+            "y": 303
+          }
+        ],
+        "sections": [
+          {
+            "name": "Deadwood Hole - Drop Nuts (Earn Heal Power)",
+            "access_rules": [
+              "acorn,amulet,pinecone,saw,walnut"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Labyrinth",
+    "children": [
+      {
+        "name": "Labyrinth - Fireberries",
+        "map_locations": [
+          {
+            "map": "checks_labyrinth",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Labyrinth - Fireberries",
+            "access_rules": [
+              "flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Labyrinth - Loose Rock",
+        "map_locations": [
+          {
+            "map": "checks_labyrinth",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Labyrinth - Loose Rock",
+            "access_rules": [
+              "fireberries,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Labyrinth - Gold Coin",
+        "map_locations": [
+          {
+            "map": "checks_labyrinth",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Labyrinth - Gold Coin",
+            "access_rules": [
+              "fireberries,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Labyrinth - Lodestone Gem",
+        "map_locations": [
+          {
+            "map": "checks_labyrinth",
+            "x": 14,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "Labyrinth - Lodestone Gem",
+            "access_rules": [
+              "fireberries,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Labyrinth - Iron Key (Freeze the Lava)",
+        "map_locations": [
+          {
+            "map": "checks_labyrinth",
+            "x": 14,
+            "y": 121
+          }
+        ],
+        "sections": [
+          {
+            "name": "Labyrinth - Iron Key (Freeze the Lava)",
+            "access_rules": [
+              "amulet_wisp,fireberries,flute,magic_scroll,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wisp Pedestal - Place Moonstone (Earn Wisp Power)",
+        "map_locations": [
+          {
+            "map": "checks_labyrinth",
+            "x": 14,
+            "y": 147
+          }
+        ],
+        "sections": [
+          {
+            "name": "Wisp Pedestal - Place Moonstone (Earn Wisp Power)",
+            "access_rules": [
+              "amulet,fireberries,flute,moonstone,saw"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Act3 Wilds",
+    "children": [
+      {
+        "name": "Zanthia - Crystal Ball (Scroll on Flame)",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Crystal Ball (Scroll on Flame)",
+            "access_rules": [
+              "amulet_wisp,flute,magic_scroll,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Magic Water",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Magic Water",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Empty Flask",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Empty Flask",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blueberry Field - Blueberries",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "Blueberry Field - Blueberries",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beach - Orchid",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 121
+          }
+        ],
+        "sections": [
+          {
+            "name": "Beach - Orchid",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beach - Pearl Gem",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 147
+          }
+        ],
+        "sections": [
+          {
+            "name": "Beach - Pearl Gem",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Secret Passage - Rainbowstone",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 173
+          }
+        ],
+        "sections": [
+          {
+            "name": "Secret Passage - Rainbowstone",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Act3 - Sunstone Gem",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 199
+          }
+        ],
+        "sections": [
+          {
+            "name": "Act3 - Sunstone Gem",
+            "access_rules": [
+              "amulet_wisp,flute,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Blue Potion",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 225
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Brew Blue Potion",
+            "access_rules": [
+              "amulet_wisp,blueberries,flute,sapphire,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Red Potion",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 251
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Brew Red Potion",
+            "access_rules": [
+              "amulet_wisp,flute,orchid,ruby,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Yellow Potion",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 277
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Brew Yellow Potion",
+            "access_rules": [
+              "amulet_wisp,flute,saw,topaz,tulip"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Orange Potion",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 303
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Brew Orange Potion",
+            "access_rules": [
+              "amulet_wisp,flute,red_potion,saw,yellow_potion"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Purple Potion",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 329
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Brew Purple Potion",
+            "access_rules": [
+              "amulet_wisp,blue_potion,flute,red_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zanthia - Brew Green Potion",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 355
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zanthia - Brew Green Potion",
+            "access_rules": [
+              "amulet_wisp,blue_potion,flute,saw,yellow_potion"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Faun - Give Apple (Royal Chalice)",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 381
+          }
+        ],
+        "sections": [
+          {
+            "name": "Faun - Give Apple (Royal Chalice)",
+            "access_rules": [
+              "amulet_blue,amulet_wisp,apple,flute,purple_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fountain - Drink Water (Earn Blue Power)",
+        "map_locations": [
+          {
+            "map": "checks_act3_wilds",
+            "x": 14,
+            "y": 407
+          }
+        ],
+        "sections": [
+          {
+            "name": "Fountain - Drink Water (Earn Blue Power)",
+            "access_rules": [
+              "amulet,amulet_wisp,crystal_ball,flute,saw"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grave Island",
+    "children": [
+      {
+        "name": "Grave Island - Fallen Star",
+        "map_locations": [
+          {
+            "map": "checks_grave_island",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Grave Island - Fallen Star",
+            "access_rules": [
+              "amulet_wisp,flute,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grave Island - Diamond Gem",
+        "map_locations": [
+          {
+            "map": "checks_grave_island",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Grave Island - Diamond Gem",
+            "access_rules": [
+              "amulet_wisp,flute,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grave - Place Orchid (Earn Red Power)",
+        "map_locations": [
+          {
+            "map": "checks_grave_island",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Grave - Place Orchid (Earn Red Power)",
+            "access_rules": [
+              "amulet,amulet_wisp,flute,orange_potion,orchid,saw"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Castle",
+    "children": [
+      {
+        "name": "Castle Library - Book Puzzle (Crown)",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle Library - Book Puzzle (Crown)",
+            "access_rules": [
+              "amulet_red,amulet_wisp,flute,iron_key,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle Kitchen - Poker (Sceptre)",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 43
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle Kitchen - Poker (Sceptre)",
+            "access_rules": [
+              "amulet_red,amulet_wisp,flute,iron_key,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Fireplace Key (Blue Spell)",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle - Fireplace Key (Blue Spell)",
+            "access_rules": [
+              "amulet_blue,amulet_red,amulet_wisp,flute,iron_key,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Music Room Mallet (Heal Herman)",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle - Music Room Mallet (Heal Herman)",
+            "access_rules": [
+              "amulet_heal,amulet_red,amulet_wisp,flute,iron_key,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Bell Puzzle Key",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 121
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle - Bell Puzzle Key",
+            "access_rules": [
+              "amulet_heal,amulet_red,amulet_wisp,flute,iron_key,mallet,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Mirror",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 147
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle - Mirror",
+            "access_rules": [
+              "amulet_red,amulet_wisp,flute,iron_key,orange_potion,saw"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Castle - Aquamarine Gem",
+        "map_locations": [
+          {
+            "map": "checks_castle",
+            "x": 14,
+            "y": 173
+          }
+        ],
+        "sections": [
+          {
+            "name": "Castle - Aquamarine Gem",
+            "access_rules": [
+              "amulet_red,amulet_wisp,flute,iron_key,orange_potion,saw"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kyragem Chamber",
+    "children": [
+      {
+        "name": "Kyragem Chamber - Defeat Malcolm (Mirror)",
+        "map_locations": [
+          {
+            "map": "checks_kyragem_chamber",
+            "x": 14,
+            "y": 17
+          }
+        ],
+        "sections": [
+          {
+            "name": "Kyragem Chamber - Defeat Malcolm (Mirror)",
+            "access_rules": [
+              "amulet_red,amulet_wisp,crown,flute,gold_key,hidden_key,iron_key,orange_potion,royal_chalice,saw,sceptre"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

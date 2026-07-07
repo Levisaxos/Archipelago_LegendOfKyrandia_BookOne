@@ -181,6 +181,78 @@
                   "section6"
                 ]
               }
+            },
+            {
+              "title": "Brandons Home",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_brandons_home"
+                ]
+              }
+            },
+            {
+              "title": "Emerald Forest",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_emerald_forest"
+                ]
+              }
+            },
+            {
+              "title": "Over The Bridge",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_over_the_bridge"
+                ]
+              }
+            },
+            {
+              "title": "Labyrinth",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_labyrinth"
+                ]
+              }
+            },
+            {
+              "title": "Act3 Wilds",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_act3_wilds"
+                ]
+              }
+            },
+            {
+              "title": "Grave Island",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_grave_island"
+                ]
+              }
+            },
+            {
+              "title": "Castle",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_castle"
+                ]
+              }
+            },
+            {
+              "title": "Kyragem Chamber",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "checks_kyragem_chamber"
+                ]
+              }
             }
           ]
         }

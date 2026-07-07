@@ -40,5 +40,61 @@
     "location_size": 34,
     "location_border_thickness": 2,
     "location_shape": "rect"
+  },
+  {
+    "name": "checks_brandons_home",
+    "img": "assets/maps/checks_brandons_home.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_emerald_forest",
+    "img": "assets/maps/checks_emerald_forest.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_over_the_bridge",
+    "img": "assets/maps/checks_over_the_bridge.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_labyrinth",
+    "img": "assets/maps/checks_labyrinth.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_act3_wilds",
+    "img": "assets/maps/checks_act3_wilds.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_grave_island",
+    "img": "assets/maps/checks_grave_island.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_castle",
+    "img": "assets/maps/checks_castle.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
+  },
+  {
+    "name": "checks_kyragem_chamber",
+    "img": "assets/maps/checks_kyragem_chamber.png",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "location_shape": "diamond"
   }
 ]
